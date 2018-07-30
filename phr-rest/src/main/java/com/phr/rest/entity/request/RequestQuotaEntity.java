@@ -3,7 +3,7 @@ package com.phr.rest.entity.request;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class RequestOrderEntity {
+public class RequestQuotaEntity {
 	 /**
      * 
      */
@@ -11,7 +11,7 @@ public class RequestOrderEntity {
     /**
      * 
      */
-    private Long orderId;
+    private Long customerId;
     /**
      * 
      */
@@ -43,18 +43,13 @@ public class RequestOrderEntity {
     public Long getId() {
         return this.id;
     }
-	/**
-	 * 设置
-	 */
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
-    }
-    /**
-     * 获取
-     */
-    public Long getOrderId() {
-        return this.orderId;
-    }
+	
+	public Long getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(Long customerId) {
+		this.customerId = customerId;
+	}
 	/**
 	 * 设置
 	 */

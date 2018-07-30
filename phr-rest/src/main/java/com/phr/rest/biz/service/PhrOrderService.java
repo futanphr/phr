@@ -1,6 +1,6 @@
 package com.phr.rest.biz.service;
 
-import com.phr.core.entity.PageInfo;
+import com.phr.core.entity.PageInfoBak;
 import com.phr.rest.biz.entity.PhrOrderEntity;
 import java.util.Map;
 import java.util.List;
@@ -53,7 +53,7 @@ public interface PhrOrderService  {
 	 * @param params
 	 * @return PageInfo<PhrOrderEntity>
 	 */
-	PageInfo<PhrOrderEntity> getList(PageInfo<PhrOrderEntity> pageInfo,Map<String,Object> params);
+	PageInfoBak<PhrOrderEntity> getList(PageInfoBak<PhrOrderEntity> pageInfo,Map<String,Object> params);
 	/**
 	 * 通过map参数获取 总数
 	 * @param params

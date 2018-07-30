@@ -1,20 +1,17 @@
-package com.phr.rest.biz.service;
+package com.jfcf.quota.mapper;
 
-import com.phr.core.entity.PageInfoBak;
-import com.phr.rest.biz.entity.UserEntity;
+import com.jfcf.quota.entity.QuotaChannelMessageEntity;
 import java.util.Map;
-
-import org.springframework.cache.annotation.Cacheable;
-
 import java.util.List;
+//import org.apache.ibatis.session.RowBounds;
 /**
  *
- * @time 2018年07月13日 14:56:53
+ * @time 2018年07月30日 15:19:46
  * @version 1.0
  *
  **/
 
-public interface UserService  {
+public interface QuotaChannelMessageMapper  {
   	/**
 	 * 通过主键id 删除
 	 * @param id
@@ -26,38 +23,36 @@ public interface UserService  {
 	 * @param record
 	 * @return
 	 */
-	int insertSelective(UserEntity record);
+	int insertSelective(QuotaChannelMessageEntity record);
 	/**
 	 * 通过主键id 获取实体对象
 	 * @param id
 	 * @return
 	 */
-	UserEntity selectByPrimaryKey(Long id);
+	QuotaChannelMessageEntity selectByPrimaryKey(Long id);
 	/**
 	 * 通过主键id 更新实体
 	 * @param record
 	 * @return 1成功  其它失败
 	 */
-	int updateByPrimaryKeySelective(UserEntity record);
+	int updateByPrimaryKeySelective(QuotaChannelMessageEntity record);
 	/**
 	 * 通过map参数获取列表
 	 * @param params
-	 * @return List<UserEntity>
+	 * @return List<QuotaChannelMessageEntity>
 	 */
-	List<UserEntity> getList(Map<String,Object> params);
+	List<QuotaChannelMessageEntity> getList(Map<String,Object> params);
 	/**
 	 * 通过map参数获取列表 分页
 	 * @param params
-	 * @return PageInfo<UserEntity>
+	 * @return List<QuotaChannelMessageEntity>
 	 */
-	PageInfoBak<UserEntity> getList(PageInfoBak<UserEntity> pageInfo,Map<String,Object> params);
+	List<QuotaChannelMessageEntity> getList(Map<String,Object> params,int pageNum,int pageSize);
 	/**
 	 * 通过map参数获取 总数
 	 * @param params
 	 * @return int
 	 */
 	int getListCount(Map<String,Object> params);
-	public String getUser1(int id);
 
-	public String getUser2(int id);
 }

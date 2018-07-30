@@ -1,4 +1,5 @@
-package com.phr.test;
+package com.test;
+
 
 import com.snailf.config.CodeGenerator;
 
@@ -6,7 +7,7 @@ import com.snailf.config.CodeGenerator;
 public class TestCodeMaker {
 
 	// 数据库地址
-	private static String ip = "localhost";
+	private static String ip = "127.0.0.1";
 	// 数据库端口号
 	private static String port = "3306";
 	// 数据库用户名

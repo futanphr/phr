@@ -10,6 +10,7 @@
 		<module>phr-core</module>
 		<module>phr-rest</module>
 		<module>phr-test</module>
+		<module>phr-code-generator</module>
 	</modules>
 
 	<parent>
@@ -25,7 +26,7 @@
 		<mysql.connector.version>5.1.24</mysql.connector.version>
 		<druid.version>1.1.9</druid.version>
 		<fastjson.version>1.2.47</fastjson.version>
-		<pagehelper.version>4.2.1</pagehelper.version>
+		<pagehelper.version>5.1.2</pagehelper.version>
 		<sharding.jdbc.version>1.5.4.1</sharding.jdbc.version>
 		<jfcf-quota-common.version>1.0.0</jfcf-quota-common.version>
 		<commons-lang3.version>3.2</commons-lang3.version>
@@ -95,7 +96,7 @@
 			</dependency>
 
 
-			<!-- 通用工具包 -->
+			<!-- 通用工具包
 			<dependency>
 				<groupId>jfcf-quota-boot</groupId>
 				<artifactId>jfcf-quota-common</artifactId>
@@ -113,7 +114,7 @@
 				<artifactId>wk-dto</artifactId>
 				<version>${wk-dto.version}</version>
 			</dependency>
-
+ -->
 
 			<!-- signUtils 加密用到 -->
 			<dependency>
@@ -178,12 +179,12 @@
 			</dependency>
 			<!-- dubbo end -->
 
-			<!--dubbo对外暴露接口 -->
+			<!--dubbo对外暴露接口 
 			<dependency>
 				<groupId>jfcf-quota</groupId>
 				<artifactId>jfcf-quota-api</artifactId>
 				<version>${jfcf-quota-api.version}</version>
-			</dependency>
+			</dependency>-->
 		</dependencies>
 	</dependencyManagement>
 </project>

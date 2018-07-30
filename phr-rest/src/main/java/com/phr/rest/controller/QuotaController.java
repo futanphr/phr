@@ -17,26 +17,29 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.phr.common.dto.ResultData;
 import com.phr.common.utils.ResultDataUtil;
+import com.phr.core.entity.PageInfo;
+import com.phr.core.entity.PageInfoBak;
 import com.phr.rest.biz.entity.PhrOrderEntity;
-import com.phr.rest.biz.service.PhrOrderService;
-import com.phr.rest.entity.request.RequestOrderEntity;
+import com.phr.rest.biz.entity.PhrQuotaEntity;
+import com.phr.rest.biz.service.PhrQuotaService;
+import com.phr.rest.entity.request.RequestQuotaEntity;
 import com.phr.rest.mq.MqSenderImpl;
 import com.phr.rest.service.CoreService;
 
 @RestController
-@RequestMapping("/order")
-public class OrderController {
+@RequestMapping("/quota")
+public class QuotaController {
 
 	@Autowired
-	private PhrOrderService phrOrderService;
+	private PhrQuotaService phrQuotaService;
 	@Autowired
 	private CoreService coreService;
 	@Resource
 	private MqSenderImpl mqSenderImpl;
 	@RequestMapping(value="/insert",method = RequestMethod.POST)
-	public ResultData insert(RequestOrderEntity requestOrderEntity) {
-		PhrOrderEntity orderEntity = new PhrOrderEntity();
-		orderEntity.setOrderId(requestOrderEntity.getOrderId());
+	public ResultData insert(RequestQuotaEntity requestOrderEntity) {
+		PhrQuotaEntity orderEntity = new PhrQuotaEntity();
+		orderEntity.setCustomerId(requestOrderEntity.getCustomerId());
 		orderEntity.setMobile(requestOrderEntity.getMobile());
 		orderEntity.setAmt(requestOrderEntity.getAmt());
 		orderEntity.setCreateTime(new Date());
@@ -52,9 +55,8 @@ public class OrderController {
        //mqSenderImpl.sendMessage(FastJsonUtils.toJson(par), "bangsheng_data_notice_topic", "auth_tags", 1313131311 + "");//测试rocketMQ
 //       resultData=coreService.createOrder(requestOrderEntity);//测试分布式锁
         Map<String,Object> params=new HashMap<String,Object>();
-        Page tPage= PageHelper.startPage(requestOrderEntity.getPageNum(),requestOrderEntity.getPageSize());
-        List<PhrOrderEntity> list= phrOrderService.getList(params);
-        for(PhrOrderEntity entity:list) {
+        PageInfo<PhrQuotaEntity> list= phrQuotaService.getListByPage(params,requestOrderEntity.getPageNum(),requestOrderEntity.getPageSize());
+        for(PhrQuotaEntity entity:list.getItems()) {
         	System.out.println(JSON.toJSONString(entity));
         }
         //phrOrderService.selectByOrderId(requestOrderEntity.getOrderId());//测试springcache缓存

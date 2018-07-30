@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.phr.rest.biz.mapper.PhrQuotaMapper">
+
+	 <resultMap type="com.phr.rest.biz.entity.PhrQuotaEntity" id="BaseResultMap">
+    	 <id column="id" property="id" /> 
+		  <id column="customerId" property="customerId" /> 
+		  <id column="mobile" property="mobile" /> 
+		  <id column="amt" property="amt" /> 
+		  <id column="createTime" property="createTime" /> 
+		  <id column="updateTime" property="updateTime" /> 
+		  <id column="remark" property="remark" /> 
+  
+    </resultMap>
+    <sql id="Base_Column_List">
+    	 phrQuota.id as id ,
+ 		 phrQuota.customer_id as customerId ,
+ 		 phrQuota.mobile as mobile ,
+ 		 phrQuota.amt as amt ,
+ 		 phrQuota.create_time as createTime ,
+ 		 phrQuota.update_time as updateTime ,
+ 		 phrQuota.remark as remark
+    </sql>
+    
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.Long">
+		 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_quota phrQuota
+ 		  where phrQuota.id = #{ id }
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		 delete 
+ 		  from t_phr_quota
+ 		  where id = #{ id }
+	</delete>
+	
+	<insert id="insertSelective" parameterType="com.phr.rest.biz.entity.PhrQuotaEntity">
+		 insert into  t_phr_quota
+ 		  <trim prefix="(" suffix=")" suffixOverrides=","> 
+ 			 <if test="id != null">
+ 				 id,
+ 			  </if>
+ 			 <if test="customerId != null">
+ 				 customer_id,
+ 			  </if>
+ 			 <if test="mobile != null">
+ 				 mobile,
+ 			  </if>
+ 			 <if test="amt != null">
+ 				 amt,
+ 			  </if>
+ 			 <if test="createTime != null">
+ 				 create_time,
+ 			  </if>
+ 			 <if test="updateTime != null">
+ 				 update_time,
+ 			  </if>
+ 			 <if test="remark != null">
+ 				 remark,
+ 			  </if>
+ 		  </trim>
+ 		  <trim prefix="values (" suffix=")" suffixOverrides="," >
+ 			 <if test="id != null">
+ 				 #{id},
+ 			  </if>
+ 			 <if test="customerId != null">
+ 				 #{customerId},
+ 			  </if>
+ 			 <if test="mobile != null">
+ 				 #{mobile},
+ 			  </if>
+ 			 <if test="amt != null">
+ 				 #{amt},
+ 			  </if>
+ 			 <if test="createTime != null">
+ 				 #{createTime},
+ 			  </if>
+ 			 <if test="updateTime != null">
+ 				 #{updateTime},
+ 			  </if>
+ 			 <if test="remark != null">
+ 				 #{remark},
+ 			  </if>
+ 		  </trim>
+	</insert>
+	
+	<update id="updateByPrimaryKeySelective" parameterType="com.phr.rest.biz.entity.PhrQuotaEntity">
+		 update   t_phr_quota
+ 		 <set>
+ 			 <if test="customerId != null">
+ 				 customer_id = #{customerId},
+ 			  </if>
+ 			 <if test="mobile != null">
+ 				 mobile = #{mobile},
+ 			  </if>
+ 			 <if test="amt != null">
+ 				 amt = #{amt},
+ 			  </if>
+ 			 <if test="createTime != null">
+ 				 create_time = #{createTime},
+ 			  </if>
+ 			 <if test="updateTime != null">
+ 				 update_time = #{updateTime},
+ 			  </if>
+ 			 <if test="remark != null">
+ 				 remark = #{remark},
+ 			  </if>
+ 		 </set>
+     where id = #{id}
+	</update>
+	
+	 <select id="getList" resultMap="BaseResultMap"
+		parameterType="java.util.Map">
+		 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_quota phrQuota
+ 		  where 1=1 
+ 		 <if test="id != null">
+ 			 and phrQuota.id = #{id}
+ 		  </if>
+ 		 <if test="customerId != null">
+ 			 and phrQuota.customer_id = #{customerId}
+ 		  </if>
+ 		 <if test="mobile != null">
+ 			 and phrQuota.mobile = #{mobile}
+ 		  </if>
+ 		 <if test="amt != null">
+ 			 and phrQuota.amt = #{amt}
+ 		  </if>
+ 		 <if test="createTime != null">
+ 			 and phrQuota.create_time = #{createTime}
+ 		  </if>
+ 		 <if test="updateTime != null">
+ 			 and phrQuota.update_time = #{updateTime}
+ 		  </if>
+ 		 <if test="remark != null">
+ 			 and phrQuota.remark = #{remark}
+ 		  </if>
+	</select>
+	 <select id="getListByPage" resultMap="BaseResultMap"
+		parameterType="java.util.Map">
+		 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_quota phrQuota
+ 		  where 1=1 
+ 		 <if test="id != null">
+ 			 and phrQuota.id = #{id}
+ 		  </if>
+ 		 <if test="customerId != null">
+ 			 and phrQuota.customer_id = #{customerId}
+ 		  </if>
+ 		 <if test="mobile != null">
+ 			 and phrQuota.mobile = #{mobile}
+ 		  </if>
+ 		 <if test="amt != null">
+ 			 and phrQuota.amt = #{amt}
+ 		  </if>
+ 		 <if test="createTime != null">
+ 			 and phrQuota.create_time = #{createTime}
+ 		  </if>
+ 		 <if test="updateTime != null">
+ 			 and phrQuota.update_time = #{updateTime}
+ 		  </if>
+ 		 <if test="remark != null">
+ 			 and phrQuota.remark = #{remark}
+ 		  </if>
+	</select>
+	 <select id="getListCount" resultType="java.lang.Integer"
+		parameterType="java.util.Map">
+		 select 
+ 		  count(phrQuota.id)
+ 		  from t_phr_quota phrQuota
+ 		  where 1=1 
+ 		 <if test="id != null">
+ 			 and phrQuota.id = #{id}
+ 		  </if>
+ 		 <if test="customerId != null">
+ 			 and phrQuota.customer_id = #{customerId}
+ 		  </if>
+ 		 <if test="mobile != null">
+ 			 and phrQuota.mobile = #{mobile}
+ 		  </if>
+ 		 <if test="amt != null">
+ 			 and phrQuota.amt = #{amt}
+ 		  </if>
+ 		 <if test="createTime != null">
+ 			 and phrQuota.create_time = #{createTime}
+ 		  </if>
+ 		 <if test="updateTime != null">
+ 			 and phrQuota.update_time = #{updateTime}
+ 		  </if>
+ 		 <if test="remark != null">
+ 			 and phrQuota.remark = #{remark}
+ 		  </if>
+	</select>
+</mapper>

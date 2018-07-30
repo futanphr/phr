@@ -20,12 +20,13 @@ public class Test {
 	    System.out.println(new Date());
 	    System.out.println("输出::"+cal.getTime());*/
 		
-		String s="💓 ✹#!♔iPhone";
-		
+//		String s="💓 ✹#!♔iPhone";
+		String s="🧚‍️🧚‍️🧚‍️";
 		
 //		 System.out.println(EmojiFilter.containsEmoji(s));
 //		    System.out.println(EmojiFilter.filterEmoji(s));
-		System.out.println(stringFilter(s));
+//		System.out.println(stringFilter(s));
+		System.out.println(replaceEmoji(s));
 	}
 	  public static String stringFilter(String str){
 		    String pattern = "[\ud83c\udc00-\ud83c\udfff]|[\ud83d\udc00-\ud83d\udfff]|[\u2600-\u27ff]";
@@ -38,8 +39,8 @@ public class Test {
 	  
 	  
 	  public static String replaceEmoji(String str) {
-		  String content = str.replaceAll("[\\x{10000}-\\x{10FFFF}]", "");
-//		  String content =str.replaceAll("[\\ud800\\udc00-\\udbff\\udfff\\ud800-\\udfff]", "*");
+//		  String content = str.replaceAll("[\\x{10000}-\\x{10FFFF}]", "");
+		  String content =str.replaceAll("[\\ud800\\udc00-\\udbff\\udfff\\ud800-\\udfff]", "*");
 	        return content;
 	    }
 

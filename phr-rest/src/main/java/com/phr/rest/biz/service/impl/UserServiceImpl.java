@@ -1,6 +1,6 @@
 package com.phr.rest.biz.service.impl;
 
-import com.phr.core.entity.PageInfo;
+import com.phr.core.entity.PageInfoBak;
 import com.phr.rest.biz.entity.UserEntity;
 import com.phr.rest.biz.service.UserService;
 import com.phr.rest.biz.mapper.UserMapper;
@@ -91,7 +91,7 @@ public class UserServiceImpl implements UserService {
 	 * @param params
 	 * @return PageInfo<UserEntity>
 	 */
-	public PageInfo<UserEntity> getList(PageInfo<UserEntity> pageInfo, Map<String, Object> params) {
+	public PageInfoBak<UserEntity> getList(PageInfoBak<UserEntity> pageInfo, Map<String, Object> params) {
 		List<UserEntity> list = userMapper.getList(params, new RowBounds(pageInfo.getStart(), pageInfo.getPageSize()));
 		Integer total = userMapper.getListCount(params);
 		pageInfo.setRows(list);

@@ -1,4 +1,5 @@
-package com.phr.test;
+package com.phr;
+
 
 import com.snailf.config.CodeGenerator;
 
@@ -6,7 +7,7 @@ import com.snailf.config.CodeGenerator;
 public class TestCodeMaker {
 
 	// 数据库地址
-	private static String ip = "localhost";
+	private static String ip = "10.5.0.36";
 	// 数据库端口号
 	private static String port = "3306";
 	// 数据库用户名
@@ -15,13 +16,13 @@ public class TestCodeMaker {
 	private static String password = "root";
 	
 	// 数据库名称
-	private static String dbName = "springboot";
+	private static String dbName = "wk_db_security";
 	// 要生成代码的表名
-	private static String tableName = "t_phr_quota";
+	private static String tableName = "t_wk_quota_channel_message";
 	// 基础包名
-	private static String basePackage = "com.phr.rest";
+	private static String basePackage = "com.jfcf";
 	// 业务包名
-	private static String servicePackage = "biz";
+	private static String servicePackage = "quota";
 
 	// 项目名称
 	// private static String projectName = "helloword";
