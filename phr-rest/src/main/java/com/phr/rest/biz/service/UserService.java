@@ -1,6 +1,6 @@
 package com.phr.rest.biz.service;
 
-import com.phr.core.entity.PageInfo;
+import com.phr.core.entity.PageInfoBak;
 import com.phr.rest.biz.entity.UserEntity;
 import java.util.Map;
 
@@ -50,7 +50,7 @@ public interface UserService  {
 	 * @param params
 	 * @return PageInfo<UserEntity>
 	 */
-	PageInfo<UserEntity> getList(PageInfo<UserEntity> pageInfo,Map<String,Object> params);
+	PageInfoBak<UserEntity> getList(PageInfoBak<UserEntity> pageInfo,Map<String,Object> params);
 	/**
 	 * 通过map参数获取 总数
 	 * @param params

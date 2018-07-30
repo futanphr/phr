@@ -28,6 +28,8 @@ public class RequestOrderEntity {
      * 
      */
     private Date updateTime;
+    private int pageNum;
+    private int pageSize;
 
 	/**
 	 * 设置
@@ -101,5 +103,17 @@ public class RequestOrderEntity {
     public Date getUpdateTime() {
         return this.updateTime;
     }
-
+	public int getPageNum() {
+		return pageNum;
+	}
+	public void setPageNum(int pageNum) {
+		this.pageNum = pageNum;
+	}
+	public int getPageSize() {
+		return pageSize;
+	}
+	public void setPageSize(int pageSize) {
+		this.pageSize = pageSize;
+	}
+    
 }

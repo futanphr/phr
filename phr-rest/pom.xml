@@ -43,11 +43,17 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<!-- 代码生成工具 -->
+		<!-- 代码生成工具 
 		<dependency>
 			<groupId>com.snailf</groupId>
 			<artifactId>code-generator</artifactId>
 			<version>1.0.1</version>
+			<scope>test</scope>
+		</dependency>-->
+		<dependency>
+			<groupId>com.phr</groupId>
+			<artifactId>phr-code-generator</artifactId>
+			<version>1.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -96,18 +102,33 @@
 			<version>3.1</version>
 		</dependency>
 		<dependency>
-	         <groupId>com.alibaba.rocketmq</groupId>
-	         <artifactId>rocketmq-tools</artifactId>
-	         <version>${rocketmq.version}</version>
-	    </dependency>
-	    <!-- json 序列化 -->
+			<groupId>com.alibaba.rocketmq</groupId>
+			<artifactId>rocketmq-tools</artifactId>
+			<version>${rocketmq.version}</version>
+		</dependency>
+		<!-- json 序列化 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>5.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.2.3</version>
 		</dependency>
 	</dependencies>
 	<build>

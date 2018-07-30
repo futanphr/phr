@@ -1,6 +1,6 @@
 package com.phr.rest.biz.service.impl;
 
-import com.phr.core.entity.PageInfo;
+import com.phr.core.entity.PageInfoBak;
 import com.phr.rest.biz.entity.PhrOrderEntity;
 import com.phr.rest.biz.service.PhrOrderService;
 import com.phr.rest.biz.mapper.PhrOrderMapper;
@@ -82,7 +82,7 @@ public class PhrOrderServiceImpl  implements PhrOrderService{
 	 * @param params
 	 * @return PageInfo<PhrOrderEntity>
 	 */
-	public PageInfo<PhrOrderEntity> getList(PageInfo<PhrOrderEntity> pageInfo,Map<String,Object> params){
+	public PageInfoBak<PhrOrderEntity> getList(PageInfoBak<PhrOrderEntity> pageInfo,Map<String,Object> params){
 		List<PhrOrderEntity> list = phrOrderMapper.getList(params,
 				new RowBounds(pageInfo.getStart(), pageInfo.getPageSize()));
 		Integer total = phrOrderMapper.getListCount(params);

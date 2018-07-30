@@ -2,82 +2,90 @@ package com.phr.core.entity;
 
 import java.io.Serializable;
 import java.util.List;
-
 @SuppressWarnings("serial")
-public class PageInfo<T> implements Serializable {
+public class PageInfo<T> implements Serializable{
+	//当前页
+    private Integer currentPage = 1;
+    // 每页显示的总条数
+    private Integer pageSize = 10;
+    // 总条数
+    private Integer totalNum;
+    // 是否有下一页
+    private Integer isMore;
+    // 总页数
+    private Integer totalPage;
+    // 开始索引
+    private Integer startIndex;
+    // 分页结果
+    private List<T> items;
 
-	private int pageNo = 1;
-	private int pageSize = 10;
-	private int total = 0;
-	private List<T> rows;
+    public PageInfo() {
+        super();
+    }
 
-	/**
-	 * @return the pageNo
-	 */
-	public int getPageNo() {
-		return pageNo;
-	}
+    public PageInfo(Integer currentPage, Integer pageSize, Integer totalNum) {
+        super();
+        this.currentPage = currentPage;
+        this.pageSize = pageSize;
+        this.totalNum = totalNum;
+        this.totalPage = (this.totalNum+this.pageSize-1)/this.pageSize;
+        this.startIndex = (this.currentPage-1)*this.pageSize;
+        this.isMore = this.currentPage >= this.totalPage?0:1;
+    }
 
-	/**
-	 * @param pageNo
-	 *            the pageNo to set
-	 */
-	public void setPageNo(int pageNo) {
-		this.pageNo = pageNo;
-	}
+    public Integer getCurrentPage() {
+        return currentPage;
+    }
 
-	/**
-	 * @return the pageSize
-	 */
-	public int getPageSize() {
-		return pageSize;
-	}
+    public void setCurrentPage(Integer currentPage) {
+        this.currentPage = currentPage;
+    }
 
-	/**
-	 * @param pageSize
-	 *            the pageSize to set
-	 */
-	public void setPageSize(int pageSize) {
-		if(pageSize <1){
-			pageSize=1;
-		}else if(pageSize >100){
-//			pageSize =100;
-		}
-		this.pageSize = pageSize;
-	}
+    public Integer getPageSize() {
+        return pageSize;
+    }
 
-	/**
-	 * @return the total
-	 */
-	public int getTotal() {
-		return total;
-	}
+    public void setPageSize(Integer pageSize) {
+        this.pageSize = pageSize;
+    }
 
-	/**
-	 * @param total
-	 *            the total to set
-	 */
-	public void setTotal(int total) {
-		this.total = total;
-	}
+    public Integer getTotalNum() {
+        return totalNum;
+    }
 
-	/**
-	 * @return the rows
-	 */
-	public List<T> getRows() {
-		return rows;
-	}
+    public void setTotalNum(Integer totalNum) {
+        this.totalNum = totalNum;
+    }
 
-	/**
-	 * @param rows
-	 *            the rows to set
-	 */
-	public void setRows(List<T> rows) {
-		this.rows = rows;
-	}
+    public Integer getIsMore() {
+        return isMore;
+    }
 
-	public int getStart() {
-		return (this.pageNo - 1) * this.pageSize;
-	}
+    public void setIsMore(Integer isMore) {
+        this.isMore = isMore;
+    }
 
+    public Integer getTotalPage() {
+        return totalPage;
+    }
+
+    public void setTotalPage(Integer totalPage) {
+        this.totalPage = totalPage;
+    }
+
+    public Integer getStartIndex() {
+        return startIndex;
+    }
+
+    public void setStartIndex(Integer startIndex) {
+        this.startIndex = startIndex;
+    }
+
+    public List<T> getItems() {
+        return items;
+    }
+
+    public void setItems(List<T> items) {
+        this.items = items;
+    }
 }

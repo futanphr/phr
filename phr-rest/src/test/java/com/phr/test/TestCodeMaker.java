@@ -17,7 +17,7 @@ public class TestCodeMaker {
 	// 数据库名称
 	private static String dbName = "springboot";
 	// 要生成代码的表名
-	private static String tableName = "user";
+	private static String tableName = "t_phr_quota";
 	// 基础包名
 	private static String basePackage = "com.phr.rest";
 	// 业务包名
