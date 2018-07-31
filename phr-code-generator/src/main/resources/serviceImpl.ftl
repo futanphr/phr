@@ -74,9 +74,10 @@ public class ${className}ServiceImpl  implements ${className}Service{
 	 * @param params
 	 * @return PageInfo<${className}Entity>
 	 */
-	public PageInfo<${className}Entity> getListByPage(Map<String,Object> params,int currentPage,int pageSize){
-	    currentPage = currentPage == null ? 1 : currentPage;
-        pageSize = pageSize == null ? 10 : pageSize;
+
+	public PageInfo<${className}Entity> getListByPage(Map<String,Object> params,Integer currentPage,Integer pageSize){
+	    currentPage =( currentPage == null || currentPage == 0 ) ? 1 : currentPage;
+        pageSize = ( pageSize == null || pageSize == 0 ) ? 10 : pageSize;
 		PageHelper.startPage(currentPage,pageSize);
 		List<${className}Entity> list = ${firsetLowerClassName}Mapper.getList(params);
 		Integer total = ${firsetLowerClassName}Mapper.getListCount(params);
