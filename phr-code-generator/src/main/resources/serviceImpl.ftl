@@ -75,6 +75,8 @@ public class ${className}ServiceImpl  implements ${className}Service{
 	 * @return PageInfo<${className}Entity>
 	 */
 	public PageInfo<${className}Entity> getListByPage(Map<String,Object> params,int currentPage,int pageSize){
+	    currentPage = currentPage == null ? 1 : currentPage;
+        pageSize = pageSize == null ? 10 : pageSize;
 		PageHelper.startPage(currentPage,pageSize);
 		List<${className}Entity> list = ${firsetLowerClassName}Mapper.getList(params);
 		Integer total = ${firsetLowerClassName}Mapper.getListCount(params);
