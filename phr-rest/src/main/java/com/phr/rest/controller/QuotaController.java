@@ -56,6 +56,7 @@ public class QuotaController {
 //       resultData=coreService.createOrder(requestOrderEntity);//测试分布式锁
         Map<String,Object> params=new HashMap<String,Object>();
         PageInfo<PhrQuotaEntity> list= phrQuotaService.getListByPage(params,requestOrderEntity.getPageNum(),requestOrderEntity.getPageSize());
+        System.out.println(JSON.toJSONString(list));
         for(PhrQuotaEntity entity:list.getItems()) {
         	System.out.println(JSON.toJSONString(entity));
         }

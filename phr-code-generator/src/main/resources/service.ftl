@@ -49,7 +49,7 @@ public interface ${className}Service  {
 	 * @param params
 	 * @return PageInfo<${className}Entity>
 	 */
-	PageInfo<${className}Entity> getListByPage(Map<String,Object> params,int currentPage,int pageSize);
+	PageInfo<${className}Entity> getListByPage(Map<String,Object> params,Integer currentPage,Integer pageSize);
 	/**
 	 * 通过map参数获取 总数
 	 * @param params

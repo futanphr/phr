@@ -6,7 +6,7 @@ import java.util.List;
 import com.phr.core.entity.PageInfo;
 /**
  *
- * @time 2018年07月30日 17:52:37
+ * @time 2018年07月31日 10:16:32
  * @version 1.0
  *
  **/
@@ -47,7 +47,7 @@ public interface PhrQuotaService  {
 	 * @param params
 	 * @return PageInfo<PhrQuotaEntity>
 	 */
-	PageInfo<PhrQuotaEntity> getListByPage(Map<String,Object> params,int currentPage,int pageSize);
+	PageInfo<PhrQuotaEntity> getListByPage(Map<String,Object> params,Integer currentPage,Integer pageSize);
 	/**
 	 * 通过map参数获取 总数
 	 * @param params

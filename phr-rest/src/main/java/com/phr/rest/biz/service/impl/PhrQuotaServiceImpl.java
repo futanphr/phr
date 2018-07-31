@@ -15,7 +15,7 @@ import com.github.pagehelper.PageHelper;
 //import org.apache.ibatis.session.RowBounds;
 /**
  *
- * @time 2018年07月30日 17:52:37
+ * @time 2018年07月31日 10:16:32
  * @version 1.0
  *
  **/
@@ -72,7 +72,9 @@ public class PhrQuotaServiceImpl  implements PhrQuotaService{
 	 * @param params
 	 * @return PageInfo<PhrQuotaEntity>
 	 */
-	public PageInfo<PhrQuotaEntity> getListByPage(Map<String,Object> params,int currentPage,int pageSize){
+	public PageInfo<PhrQuotaEntity> getListByPage(Map<String,Object> params,Integer currentPage,Integer pageSize){
+	    currentPage =( currentPage == null || currentPage == 0 ) ? 1 : currentPage;
+        pageSize = ( pageSize == null || pageSize == 0 ) ? 10 : pageSize;
 		PageHelper.startPage(currentPage,pageSize);
 		List<PhrQuotaEntity> list = phrQuotaMapper.getList(params);
 		Integer total = phrQuotaMapper.getListCount(params);
