@@ -13,6 +13,10 @@
 		parameterType="java.lang.Long">
 		${selectSql}
 	</select>
+	<select id="selectByKeys" resultMap="BaseResultMap"
+		parameterType="java.util.Map">
+		${selectSql}
+	</select>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
 		${deleteSql}

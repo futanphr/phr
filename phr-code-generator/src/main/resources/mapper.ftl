@@ -35,6 +35,12 @@ public interface ${className}Mapper  {
 	 */
 	${className}Entity selectByPrimaryKey(Long id);
 	/**
+	 * 通过map 获取实体对象
+	 * @param id
+	 * @return
+	 */
+	${className}Entity selectByKeys(Map<String,Object> params);
+	/**
 	 * 通过主键id 更新实体
 	 * @param record
 	 * @return 1成功  其它失败

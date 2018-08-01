@@ -6,7 +6,7 @@ import java.util.List;
 //import org.apache.ibatis.session.RowBounds;
 /**
  *
- * @time 2018年07月31日 10:16:32
+ * @time 2018年08月01日 13:46:59
  * @version 1.0
  *
  **/
@@ -30,6 +30,12 @@ public interface PhrQuotaMapper  {
 	 * @return
 	 */
 	PhrQuotaEntity selectByPrimaryKey(Long id);
+	/**
+	 * 通过map 获取实体对象
+	 * @param id
+	 * @return
+	 */
+	PhrQuotaEntity selectByKeys(Map<String,Object> params);
 	/**
 	 * 通过主键id 更新实体
 	 * @param record

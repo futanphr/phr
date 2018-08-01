@@ -15,7 +15,7 @@ import com.github.pagehelper.PageHelper;
 //import org.apache.ibatis.session.RowBounds;
 /**
  *
- * @time 2018年07月31日 10:16:32
+ * @time 2018年08月01日 13:47:00
  * @version 1.0
  *
  **/
@@ -51,6 +51,14 @@ public class PhrQuotaServiceImpl  implements PhrQuotaService{
 		return phrQuotaMapper.selectByPrimaryKey(id);
 	}
 	/**
+	 * 通过map 获取实体对象
+	 * @param id
+	 * @return
+	 */
+	public PhrQuotaEntity selectByKeys(Map<String,Object> params){
+		return phrQuotaMapper.selectByKeys(params);
+	}
+	/**
 	 * 通过主键id 更新实体
 	 * @param record
 	 * @return 1成功  其它失败
@@ -72,6 +80,7 @@ public class PhrQuotaServiceImpl  implements PhrQuotaService{
 	 * @param params
 	 * @return PageInfo<PhrQuotaEntity>
 	 */
+
 	public PageInfo<PhrQuotaEntity> getListByPage(Map<String,Object> params,Integer currentPage,Integer pageSize){
 	    currentPage =( currentPage == null || currentPage == 0 ) ? 1 : currentPage;
         pageSize = ( pageSize == null || pageSize == 0 ) ? 10 : pageSize;

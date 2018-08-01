@@ -29,6 +29,13 @@
  		  from t_phr_quota phrQuota
  		  where phrQuota.id = #{ id }
 	</select>
+	<select id="selectByKeys" resultMap="BaseResultMap"
+		parameterType="java.util.Map">
+		 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_quota phrQuota
+ 		  where phrQuota.id = #{ id }
+	</select>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
 		 delete 

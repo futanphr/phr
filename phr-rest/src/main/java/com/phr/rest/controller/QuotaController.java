@@ -55,11 +55,15 @@ public class QuotaController {
        //mqSenderImpl.sendMessage(FastJsonUtils.toJson(par), "bangsheng_data_notice_topic", "auth_tags", 1313131311 + "");//测试rocketMQ
 //       resultData=coreService.createOrder(requestOrderEntity);//测试分布式锁
         Map<String,Object> params=new HashMap<String,Object>();
-        PageInfo<PhrQuotaEntity> list= phrQuotaService.getListByPage(params,requestOrderEntity.getPageNum(),requestOrderEntity.getPageSize());
+        params.put("id", 1);
+        PhrQuotaEntity phrQuotaEntity=phrQuotaService.selectByKeys(params);
+        System.out.println(JSON.toJSONString(phrQuotaEntity));
+        /* PageInfo<PhrQuotaEntity> list= phrQuotaService.getListByPage(params,requestOrderEntity.getPageNum(),requestOrderEntity.getPageSize());
         System.out.println(JSON.toJSONString(list));
         for(PhrQuotaEntity entity:list.getItems()) {
         	System.out.println(JSON.toJSONString(entity));
-        }
+        }*/
+        //测试分页查询
         //phrOrderService.selectByOrderId(requestOrderEntity.getOrderId());//测试springcache缓存
 		} catch (Exception e) {
 			e.printStackTrace();
