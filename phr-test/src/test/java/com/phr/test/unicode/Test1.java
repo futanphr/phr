@@ -12,6 +12,7 @@ public class Test1 {
 			
 
 			System.out.println("远程代码31");
+			System.out.println("远程代码2");
 
 
 		}
