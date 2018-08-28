@@ -9,7 +9,7 @@ public class Test1 {
 			System.out.println("本地代码");
 
 			System.out.println("远程代码1");
-			System.out.println("增加代码");
+			
 
 			System.out.println("远程代码2");
 
