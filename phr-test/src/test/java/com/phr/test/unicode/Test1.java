@@ -6,6 +6,7 @@ public class Test1 {
 		String[] ss=s.split("@");
 		for(String str:ss) {
 			System.out.println(str);
+			System.out.println("本地代码");
 		}
 	}
 
