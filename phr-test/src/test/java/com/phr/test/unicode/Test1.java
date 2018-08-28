@@ -7,6 +7,8 @@ public class Test1 {
 		for(String str:ss) {
 			System.out.println(str);
 			System.out.println("本地代码");
+			System.out.println("远程代码");
+
 		}
 	}
 
