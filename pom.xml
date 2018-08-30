@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.phr</groupId>
@@ -45,28 +46,24 @@
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<!-- 引入mybatis -->
 			<dependency>
 				<groupId>org.mybatis.spring.boot</groupId>
 				<artifactId>mybatis-spring-boot-starter</artifactId>
 				<version>${mybatis.spring.boot.version}</version>
 			</dependency>
-
+			<!-- 引入mysql依赖 -->
 			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
 				<version>${mysql.connector.version}</version>
 			</dependency>
+			<!-- 引入数据源 -->
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>druid</artifactId>
 				<version>${druid.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>fastjson</artifactId>
-				<version>${fastjson.version}</version>
-			</dependency>
-
 			<!--分页插件 -->
 			<dependency>
 				<groupId>com.github.pagehelper</groupId>
@@ -80,6 +77,13 @@
 				<artifactId>sharding-jdbc-core</artifactId>
 				<version>${sharding.jdbc.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+
+
 
 			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 			<dependency>
@@ -96,25 +100,11 @@
 			</dependency>
 
 
-			<!-- 通用工具包
-			<dependency>
-				<groupId>jfcf-quota-boot</groupId>
-				<artifactId>jfcf-quota-common</artifactId>
-				<version>${jfcf-quota-common.version}</version>
-			</dependency>
-
-
-			<dependency>
-				<groupId>com.jfcf</groupId>
-				<artifactId>jfcf-dto</artifactId>
-				<version>${jfcf-dto.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.jfcf</groupId>
-				<artifactId>wk-dto</artifactId>
-				<version>${wk-dto.version}</version>
-			</dependency>
- -->
+			<!-- 通用工具包 <dependency> <groupId>jfcf-quota-boot</groupId> <artifactId>jfcf-quota-common</artifactId> 
+				<version>${jfcf-quota-common.version}</version> </dependency> <dependency> 
+				<groupId>com.jfcf</groupId> <artifactId>jfcf-dto</artifactId> <version>${jfcf-dto.version}</version> 
+				</dependency> <dependency> <groupId>com.jfcf</groupId> <artifactId>wk-dto</artifactId> 
+				<version>${wk-dto.version}</version> </dependency> -->
 
 			<!-- signUtils 加密用到 -->
 			<dependency>
@@ -179,12 +169,8 @@
 			</dependency>
 			<!-- dubbo end -->
 
-			<!--dubbo对外暴露接口 
-			<dependency>
-				<groupId>jfcf-quota</groupId>
-				<artifactId>jfcf-quota-api</artifactId>
-				<version>${jfcf-quota-api.version}</version>
-			</dependency>-->
+			<!--dubbo对外暴露接口 <dependency> <groupId>jfcf-quota</groupId> <artifactId>jfcf-quota-api</artifactId> 
+				<version>${jfcf-quota-api.version}</version> </dependency> -->
 		</dependencies>
 	</dependencyManagement>
 </project>
