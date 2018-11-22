@@ -22,7 +22,7 @@ import com.alibaba.rocketmq.common.message.MessageExt;
 /**
  * MQ监听器
  */
-@Service
+//@Service
 public class RocketMqListener implements MessageListenerConcurrently {
 
 	private Logger logger = LoggerFactory.getLogger(RocketMqListener.class);

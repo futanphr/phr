@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.phr.common.dto.ResultData;
 import com.phr.rest.biz.entity.UserEntity;
 import com.phr.rest.biz.service.UserService;
-import com.phr.rest.entity.request.RequestUserEntity;
+import com.phr.rest.dto.request.RequestUserEntity;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -45,12 +45,12 @@ public class UserController {
 		return rs;
 	}
 	
-	@RequestMapping("/getUser1")
-    public String getUser1() {
+	@RequestMapping(value = "/getUser1" ,method = RequestMethod.GET)
+    public ResultData getUser1() {
         return userService.getUser1(003);
     }
-	@RequestMapping("/getUser2")
+	/*@GetMapping("/getUser2")
     public String getUse1r() {
         return userService.getUser2(005);
-    }
+    }*/
 }

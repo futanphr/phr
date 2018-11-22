@@ -2,7 +2,6 @@ package com.phr.rest.controller;
 
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
@@ -13,16 +12,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSON;
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageHelper;
 import com.phr.common.dto.ResultData;
 import com.phr.common.utils.ResultDataUtil;
-import com.phr.core.entity.PageInfo;
-import com.phr.core.entity.PageInfoBak;
-import com.phr.rest.biz.entity.PhrOrderEntity;
 import com.phr.rest.biz.entity.PhrQuotaEntity;
 import com.phr.rest.biz.service.PhrQuotaService;
-import com.phr.rest.entity.request.RequestQuotaEntity;
+import com.phr.rest.dto.request.RequestQuotaEntity;
 import com.phr.rest.mq.MqSenderImpl;
 import com.phr.rest.service.CoreService;
 
@@ -34,8 +28,8 @@ public class QuotaController {
 	private PhrQuotaService phrQuotaService;
 	@Autowired
 	private CoreService coreService;
-	@Resource
-	private MqSenderImpl mqSenderImpl;
+	/*@Resource
+	private MqSenderImpl mqSenderImpl;*/
 	@RequestMapping(value="/insert",method = RequestMethod.POST)
 	public ResultData insert(RequestQuotaEntity requestOrderEntity) {
 		PhrQuotaEntity orderEntity = new PhrQuotaEntity();

@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.phr.common.dto.ResultData;
 import com.phr.common.redis.RedisLock;
 import com.phr.common.utils.ResultDataUtil;
-import com.phr.rest.entity.request.RequestOrderEntity;
+import com.phr.rest.dto.request.RequestOrderEntity;
 import com.phr.rest.service.CoreService;
 @Service("coreService")
 public class CoreServiceImpl implements CoreService{

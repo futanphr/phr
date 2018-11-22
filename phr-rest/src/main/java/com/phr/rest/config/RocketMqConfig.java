@@ -1,18 +1,15 @@
-package com.phr.rest.mq;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+package com.phr.rest.config;
 
 import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
 import com.alibaba.rocketmq.client.exception.MQClientException;
 import com.alibaba.rocketmq.client.producer.DefaultMQProducer;
 import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 /**
  * 配置spring 消费者和生产者
@@ -20,10 +17,10 @@ import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
  * @author :郝丹阳
  * @date: 2018-05-03
  */
-@Configuration
-@ConfigurationProperties(prefix = "rocketmq")
-public class RocketMqConfiguration {
-	private static Logger logger = LoggerFactory.getLogger(RocketMqConfiguration.class);
+//@Configuration
+//@ConfigurationProperties(prefix = "rocketmq")
+public class RocketMqConfig {
+	private static Logger logger = LoggerFactory.getLogger(RocketMqConfig.class);
 
 	// mq服务器的地址
 	private String namesrvAddr;

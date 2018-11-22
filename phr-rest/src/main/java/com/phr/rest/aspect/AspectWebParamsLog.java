@@ -24,6 +24,9 @@ import com.phr.common.validate.ValidateEntity;
 import com.phr.common.validate.ValidateResult;
 import com.phr.core.constants.CoreConstant;
 import com.phr.core.entity.RequestBaseEntity;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 @Aspect
 @Component
@@ -60,11 +63,15 @@ public class AspectWebParamsLog {
 
 	@Around("execution(* com.phr..controller..*.*(..))")
 	public Object around(ProceedingJoinPoint jp) throws Throwable {
+		RequestAttributes ra = RequestContextHolder.getRequestAttributes();
+		ServletRequestAttributes sra = (ServletRequestAttributes) ra;
+		HttpServletRequest request = sra.getRequest();
+		String url = request.getRequestURL().toString();
 
 		try {
 			Object[] objects = jp.getArgs();
 			if (objects != null && objects.length > 0) {
-				logger.info("【请求开始,打印入参】请求者IP["+getIpAddr(request)+"] 访问类名[" + jp.getTarget().getClass().getName() + "] - " + "方法名[" + jp.getSignature().getName() + "]传入参数："
+				logger.info("【请求开始,打印入参】请求者IP["+getIpAddr(request)+"] 请求url："+url+"，访问类名[" + jp.getTarget().getClass().getName() + "] - " + "方法名[" + jp.getSignature().getName() + "]传入参数："
 						+ JSON.toJSONString(objects[0]));
 			}
 			if (objects != null && objects.length > 0 && objects[0] instanceof RequestBaseEntity) {
@@ -90,7 +97,10 @@ public class AspectWebParamsLog {
 
 	@AfterReturning(pointcut = "execution(* com.phr..controller..*.*(..))", returning = "retVal")
 	public void afterReturning(JoinPoint jp, Object retVal) throws Exception {
-
+		RequestAttributes ra = RequestContextHolder.getRequestAttributes();
+		ServletRequestAttributes sra = (ServletRequestAttributes) ra;
+		HttpServletRequest request = sra.getRequest();
+		String url = request.getRequestURL().toString();
 		// if (retVal != null) {
 		// if (retVal instanceof ResponseEntity) {
 		// Object[] objects = jp.getArgs();
@@ -105,7 +115,7 @@ public class AspectWebParamsLog {
 		// + jp.getSignature().getName() + "]输出参数：" + retVal);
 		// }
 		// } else {
-		logger.info("【请求结束,打印出参】请求者IP["+getIpAddr(request)+"] 访问类名[" + jp.getTarget().getClass().getName() + "] - " + "方法名[" + jp.getSignature().getName() + "]输出参数：" + JSON.toJSONString(retVal));
+		logger.info("【请求结束,打印出参】请求者IP["+getIpAddr(request)+"] 请求url："+url+"，访问类名[" + jp.getTarget().getClass().getName() + "] - " + "方法名[" + jp.getSignature().getName() + "]输出参数：" + JSON.toJSONString(retVal));
 		// }
 	}
 

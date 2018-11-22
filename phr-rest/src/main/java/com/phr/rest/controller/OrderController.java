@@ -7,10 +7,10 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import com.phr.rest.feign.UserClient;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
@@ -19,21 +19,26 @@ import com.phr.common.dto.ResultData;
 import com.phr.common.utils.ResultDataUtil;
 import com.phr.rest.biz.entity.PhrOrderEntity;
 import com.phr.rest.biz.service.PhrOrderService;
-import com.phr.rest.entity.request.RequestOrderEntity;
+import com.phr.rest.dto.request.RequestOrderEntity;
 import com.phr.rest.mq.MqSenderImpl;
 import com.phr.rest.service.CoreService;
 
 @RestController
 @RequestMapping("/order")
+@Slf4j
 public class OrderController {
 
 	@Autowired
 	private PhrOrderService phrOrderService;
 	@Autowired
 	private CoreService coreService;
+	/*@Resource
+	private MqSenderImpl mqSenderImpl;*/
+
 	@Resource
-	private MqSenderImpl mqSenderImpl;
+	private UserClient userClient;
 	@RequestMapping(value="/insert",method = RequestMethod.POST)
+	@ResponseBody
 	public ResultData insert(RequestOrderEntity requestOrderEntity) {
 		PhrOrderEntity orderEntity = new PhrOrderEntity();
 		orderEntity.setOrderId(requestOrderEntity.getOrderId());
@@ -64,5 +69,12 @@ public class OrderController {
        
 //        ResultData resultData=ResultDataUtil.successResult("操作成功！");
 		return resultData;
+	}
+	@GetMapping("/getUserData")
+	public ResultData getUserData(){
+		ResultData rs=new ResultData();
+		rs=userClient.getUser();
+		return rs;
+
 	}
 }

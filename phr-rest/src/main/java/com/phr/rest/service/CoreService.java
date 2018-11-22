@@ -1,7 +1,7 @@
 package com.phr.rest.service;
 
 import com.phr.common.dto.ResultData;
-import com.phr.rest.entity.request.RequestOrderEntity;
+import com.phr.rest.dto.request.RequestOrderEntity;
 /**
  * 
  * 

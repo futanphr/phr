@@ -6,7 +6,7 @@ mybatis:
     datasource1:
        url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
        username: root
-       password: root
+       password: root123
        driver-class-name: com.mysql.jdbc.Driver
        type: com.alibaba.druid.pool.DruidDataSource
        # 下面为连接池的补充设置，应用到上面所有数据源中
@@ -36,7 +36,7 @@ mybatis:
     datasource2:
        url: jdbc:mysql://localhost:3306/springboot2?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
        username: root
-       password: root
+       password: root123
        driver-class-name: com.mysql.jdbc.Driver
        type: com.alibaba.druid.pool.DruidDataSource
        # 下面为连接池的补充设置，应用到上面所有数据源中
@@ -66,18 +66,18 @@ mybatis:
 management:
   health:
     defaults:
-      enabled: true 
-  endpoints:  
-    web:  
-      exposure:  
+      enabled: true
+  endpoints:
+    web:
+      exposure:
         include: '*'
       base-path: /
-  endpoint: 
+  endpoint:
       health:
         show-details: always
 spring:
   redis1 :
-    cluster: 
+    cluster:
       nodes: 192.168.68.130:7001,192.168.68.130:7002,192.168.68.130:7003
       max-redirects: 3
     timeout: 3000
@@ -112,14 +112,14 @@ spring:
           min-idle: 0
       #连接超时时间
       timeout: 10000
-cache: 
+cache:
   redis:   #redis setting start
     enabled: true
     #缓存设置,可以直接使用应用名，如果不需要，这使用其他
     cacheName: phr
 #    hostName: localhost
 #    port: 6379
-#    password: 
+#    password:
     hostName: 10.5.1.2
     port: 6379
     password: 123456
@@ -145,3 +145,11 @@ rocketmq:
   consumeThreadMax: 40
   producerGroupName: quote-check-platform-produce-group
   mqConsumerGroupName: bangsheng_data_notice_group
+
+remote:
+  user:
+    url: http://localhost:8080/
+##feign熔断
+feign:
+  hystrix:
+    enabled: true

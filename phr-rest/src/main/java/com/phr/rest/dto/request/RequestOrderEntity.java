@@ -1,9 +1,9 @@
-package com.phr.rest.entity.request;
+package com.phr.rest.dto.request;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class RequestQuotaEntity {
+public class RequestOrderEntity {
 	 /**
      * 
      */
@@ -11,7 +11,7 @@ public class RequestQuotaEntity {
     /**
      * 
      */
-    private Long customerId;
+    private Long orderId;
     /**
      * 
      */
@@ -43,13 +43,18 @@ public class RequestQuotaEntity {
     public Long getId() {
         return this.id;
     }
-	
-	public Long getCustomerId() {
-		return customerId;
-	}
-	public void setCustomerId(Long customerId) {
-		this.customerId = customerId;
-	}
+	/**
+	 * 设置
+	 */
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
+    }
+    /**
+     * 获取
+     */
+    public Long getOrderId() {
+        return this.orderId;
+    }
 	/**
 	 * 设置
 	 */

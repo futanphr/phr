@@ -1,5 +1,6 @@
 package com.phr.rest.biz.service;
 
+import com.phr.common.dto.ResultData;
 import com.phr.core.entity.PageInfoBak;
 import com.phr.rest.biz.entity.UserEntity;
 import java.util.Map;
@@ -57,7 +58,7 @@ public interface UserService  {
 	 * @return int
 	 */
 	int getListCount(Map<String,Object> params);
-	public String getUser1(int id);
+	public ResultData getUser1(int id);
 
-	public String getUser2(int id);
+	/*public String getUser2(int id);*/
 }

@@ -1,5 +1,6 @@
 package com.phr.rest.biz.service.impl;
 
+import com.phr.common.dto.ResultData;
 import com.phr.core.entity.PageInfoBak;
 import com.phr.rest.biz.entity.UserEntity;
 import com.phr.rest.biz.service.UserService;
@@ -24,10 +25,10 @@ import org.apache.ibatis.session.RowBounds;
  **/
 @Service("userService")
 public class UserServiceImpl implements UserService {
-	@Autowired
+	/*@Autowired
 	StringRedisTemplate stringRedisTemplate;
 	@Autowired
-	RedisTemplate redisTemplate;
+	RedisTemplate redisTemplate;*/
 
 	@Autowired
 	private UserMapper userMapper;
@@ -109,19 +110,21 @@ public class UserServiceImpl implements UserService {
 		return userMapper.getListCount(params);
 	}
 
-	@Cacheable(value = "my-redis-cache1", key = "#id", unless = "#result==null")
-	public String getUser1(int id) {
+	//@Cacheable(value = "my-redis-cache1", key = "#id", unless = "#result==null")
+	public ResultData getUser1(int id) {
 		System.out.println("i am from userService getUser1");
-		System.out.println(stringRedisTemplate.getValueSerializer());
-		System.out.println(redisTemplate.getValueSerializer());
-		return "fee";
+		//System.out.println(stringRedisTemplate.getValueSerializer());
+		//System.out.println(redisTemplate.getValueSerializer());
+		ResultData rs=new ResultData();
+		rs.setData("fee");
+		return rs;
 	}
 
-	@Cacheable(value = "my-redis-cache2", key = "#id", unless = "#result==null")
+	/*@Cacheable(value = "my-redis-cache2", key = "#id", unless = "#result==null")
 	public String getUser2(int id) {
 		System.out.println("i am from userService getUser2");
 		System.out.println(stringRedisTemplate.getValueSerializer());
 		System.out.println(redisTemplate.getValueSerializer());
 		return "fee";
-	}
+	}*/
 }

@@ -1,4 +1,4 @@
-package com.phr.rest.entity.request;
+package com.phr.rest.dto.request;
 
 import java.util.Date;
 

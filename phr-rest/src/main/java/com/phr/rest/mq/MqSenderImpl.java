@@ -24,7 +24,7 @@ import com.phr.common.utils.StringUtils;
  * 如果选择继续执行程序，则消息丢失。
  * 否则选择重发该消息，但是可能会导致消息重复。建议重发，因为可以通过其他手段来规避消息重复消费问题。
  */
-@Service
+//@Service
 public class MqSenderImpl {
 
     private Logger LOGGER = LoggerFactory.getLogger(MqSenderImpl.class);

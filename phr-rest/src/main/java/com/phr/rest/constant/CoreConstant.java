@@ -1,4 +1,4 @@
-package com.phr.rest.constants;
+package com.phr.rest.constant;
 
 public class CoreConstant {
 

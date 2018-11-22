@@ -14,7 +14,7 @@
 	<logger name="org.apache.zookeeper" level="ERROR" />
 	<logger name="com.alibaba.rocketmq" level="ERROR" />
 
-	<property name="LOG_HOME" value="/app/logs" />
+	<property name="LOG_HOME" value="/Users/penghuari/Java/mylogs" />
 	<property name="APP_NAME" value="jfcf-phr" />
 
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
