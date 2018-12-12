@@ -7,7 +7,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import com.phr.rest.feign.UserClient;
+import com.phr.rest.remote.feign.UserClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -71,7 +71,7 @@ public class OrderController {
 		return resultData;
 	}
 	@GetMapping("/getUserData")
-	public ResultData getUserData(){
+	public ResultData getUserData(@RequestParam(value = "name",defaultValue = "zhangshan") String name,@RequestParam(value = "age",defaultValue = "18") String age){
 		ResultData rs=new ResultData();
 		rs=userClient.getUser();
 		return rs;

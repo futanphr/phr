@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="phr-code-generator" />
+        <module name="phr-common" />
+        <module name="phr-core" />
+        <module name="phr-rest" />
+        <module name="phr-test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="phr" target="1.8" />
+      <module name="phr-code-generator" target="1.8" />
+      <module name="phr-common" target="1.8" />
+      <module name="phr-core" target="1.8" />
+      <module name="phr-rest" target="1.8" />
+      <module name="phr-test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

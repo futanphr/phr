@@ -1,0 +1,66 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.phr.rest.mybatis.shardingjdbc.config.DataSourceConfig",
+      "name": "mybatis.biz.datasource1",
+      "sourceMethod": "mybatisDataSource1()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.phr.rest.mybatis.shardingjdbc.config.DataSourceConfig",
+      "name": "mybatis.biz.datasource2",
+      "sourceMethod": "mybatisDataSource2()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.phr.rest.mybatis.shardingjdbc.config.DataSourceConfig",
+      "name": "mybatis.datasource",
+      "type": "com.phr.rest.mybatis.shardingjdbc.config.DataSourceConfig"
+    },
+    {
+      "sourceType": "com.phr.rest.mq.RocketMqConfiguration",
+      "name": "rocketmq",
+      "type": "com.phr.rest.mq.RocketMqConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.phr.rest.mq.RocketMqConfiguration",
+      "defaultValue": 0,
+      "name": "rocketmq.consume-thread-max",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.phr.rest.mq.RocketMqConfiguration",
+      "defaultValue": 0,
+      "name": "rocketmq.consume-thread-min",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.phr.rest.mq.RocketMqConfiguration",
+      "name": "rocketmq.listen-topics-tags1",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.phr.rest.mq.RocketMqConfiguration",
+      "name": "rocketmq.listen-topics-tags2",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.phr.rest.mq.RocketMqConfiguration",
+      "name": "rocketmq.mq-consumer-group-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.phr.rest.mq.RocketMqConfiguration",
+      "name": "rocketmq.namesrv-addr",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.phr.rest.mq.RocketMqConfiguration",
+      "name": "rocketmq.producer-group-name",
+      "type": "java.lang.String"
+    }
+  ]
+}

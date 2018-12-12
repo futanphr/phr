@@ -1,0 +1,23 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.phr.rest.mybatis.shardingjdbc.config.DataSourceConfig",
+      "name": "mybatis.biz.datasource1",
+      "sourceMethod": "mybatisDataSource1()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.phr.rest.mybatis.shardingjdbc.config.DataSourceConfig",
+      "name": "mybatis.biz.datasource2",
+      "sourceMethod": "mybatisDataSource2()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.phr.rest.mybatis.shardingjdbc.config.DataSourceConfig",
+      "name": "mybatis.datasource",
+      "type": "com.phr.rest.mybatis.shardingjdbc.config.DataSourceConfig"
+    }
+  ],
+  "properties": []
+}

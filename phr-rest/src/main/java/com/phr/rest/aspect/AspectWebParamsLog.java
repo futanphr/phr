@@ -1,17 +1,17 @@
 package com.phr.rest.aspect;
 
+import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.Arrays;
 
 import javax.servlet.http.HttpServletRequest;
 
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.*;
+import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +30,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 @Aspect
 @Component
+@Slf4j
 public class AspectWebParamsLog {
 	private static Logger logger = LoggerFactory.getLogger(AspectWebParamsLog.class);
 	
@@ -37,29 +38,15 @@ public class AspectWebParamsLog {
 	@Autowired
 	private HttpServletRequest request;
 
-	@Before("execution(* com.phr..controller..*.*(..))")
+	/*@Before("execution(* com.phr..controller..*.*(..))")
 	public void before(JoinPoint jp) throws Exception {
-		Object[] objects = jp.getArgs();
-		// if (objects != null && objects.length > 0 && objects[0] instanceof
-		// RequestBaseEntity) {
-		// RequestBaseEntity baseEntity = null;
-		// if (objects[0] == null) {
-		// baseEntity = new RequestBaseEntity();
-		// } else {
-		// baseEntity = (RequestBaseEntity) objects[0];
-		// }
-		// baseEntity.setReqTime(new Date());
-		// logger.info(" class[" + jp.getTarget().getClass().getName() + "] - "
-		// + "method["
-		// + jp.getSignature().getName() + "]传入参数：" +
-		// JSON.toJSONString(objects[0]));
-		//
-		// }
-		
-		
-	}
+		RequestAttributes ra = RequestContextHolder.getRequestAttributes();
+		ServletRequestAttributes sra = (ServletRequestAttributes) ra;
+		HttpServletRequest request = sra.getRequest();
+		String url = request.getRequestURL().toString();
+		logger.info("【请求开始】请求者IP:{} ,请求url:{},请求param:{}" ,getIpAddr(request),url,Arrays.toString(jp.getArgs()));
 
-	// private static String repeat_url = "repeat:url:";
+	}
 
 	@Around("execution(* com.phr..controller..*.*(..))")
 	public Object around(ProceedingJoinPoint jp) throws Throwable {
@@ -70,25 +57,23 @@ public class AspectWebParamsLog {
 
 		try {
 			Object[] objects = jp.getArgs();
-			if (objects != null && objects.length > 0) {
-				logger.info("【请求开始,打印入参】请求者IP["+getIpAddr(request)+"] 请求url："+url+"，访问类名[" + jp.getTarget().getClass().getName() + "] - " + "方法名[" + jp.getSignature().getName() + "]传入参数："
-						+ JSON.toJSONString(objects[0]));
-			}
-			if (objects != null && objects.length > 0 && objects[0] instanceof RequestBaseEntity) {
+
+
+
+			*//*if (objects != null && objects.length > 0 && objects[0] instanceof RequestBaseEntity) {
 				Object obj = objects[0];
 
 				ValidateResult result = ValidateEntity.validateFiled(obj);
 				if (result.getCode() == 0)
 					return ResultDataUtil.result(ResultData.STATUS_ERROR, result.getDesc().toString());
 				;
-			}
+			}*//*
 			Object rvt;
 			long startTime = System.currentTimeMillis();// 获取开始时间
 			rvt = jp.proceed(objects);
 			long endTime = System.currentTimeMillis();// 获取结束时间
 			long val = endTime - startTime;
-
-			logger.info(" ===>class[" + jp.getTarget().getClass().getName() + "] - " + "method[" + jp.getSignature().getName() + "]方法 执行了：" + val + "ms");
+			logger.info("【请求结束】请求者IP:{} ,请求url:{},请求result:{},执行时间:{}ms" ,getIpAddr(request),url,JSON.toJSONString(rvt),val);
 			return rvt;
 		} catch (Exception e) {
 			return ResultDataUtil.errorResult(CoreConstant.SYSTEM_ABNORMALITY);
@@ -101,23 +86,44 @@ public class AspectWebParamsLog {
 		ServletRequestAttributes sra = (ServletRequestAttributes) ra;
 		HttpServletRequest request = sra.getRequest();
 		String url = request.getRequestURL().toString();
-		// if (retVal != null) {
-		// if (retVal instanceof ResponseEntity) {
-		// Object[] objects = jp.getArgs();
-		// if (objects != null && objects.length > 0 && objects[0] instanceof
-		// RequestBaseEntity) {
-		// RequestBaseEntity baseEntity = (RequestBaseEntity) objects[0];
-		// ResponseEntity responseEntity = (ResponseEntity) retVal;
-		// responseEntity.setRespTime(baseEntity.getReqTime());
-		// }
-		// logger.info(" class[" + jp.getTarget().getClass().getName() + "] - "
-		// + "method["
-		// + jp.getSignature().getName() + "]输出参数：" + retVal);
-		// }
-		// } else {
-		logger.info("【请求结束,打印出参】请求者IP["+getIpAddr(request)+"] 请求url："+url+"，访问类名[" + jp.getTarget().getClass().getName() + "] - " + "方法名[" + jp.getSignature().getName() + "]输出参数：" + JSON.toJSONString(retVal));
-		// }
+
+	}*/
+
+	/*@Pointcut("@annotation(com.phr)")
+	public void logPointcut(){}*/
+
+	@Around("execution(* com.phr..controller..*.*(..))")
+	public Object logHandler(ProceedingJoinPoint process) throws Throwable{
+		RequestAttributes ra = RequestContextHolder.getRequestAttributes();
+		ServletRequestAttributes sra = (ServletRequestAttributes) ra;
+		HttpServletRequest request = sra.getRequest();
+		String url = request.getRequestURL().toString();
+
+		long startTime=System.currentTimeMillis();
+		MethodSignature methodSignature= (MethodSignature) process.getSignature();
+		Method method=methodSignature.getMethod();
+		String methodName=method.getName();
+		String className= method.getDeclaringClass().getName();
+		Object[] args=process.getArgs();
+		StringBuilder params=new StringBuilder();
+		for (int i = 0; i < args.length; i++) {
+			params.append(args[i].toString());
+			params.append(";");
+		}
+		Object result= null;
+		try {
+			result = process.proceed();
+		} catch (Throwable throwable) {
+			String exception=throwable.getClass()+":"+throwable.getMessage();
+			long costTime=System.currentTimeMillis()-startTime;
+			log.error("请求url：{}，请求耗时：{}，请求类名：{}，请求方法：{}，请求参数:{}，请求结果：{}",url,costTime,className,methodName,params.toString(),exception);
+			//return CustomerResponse.buildFail(throwable.getMessage());
+		}
+		long costTime=System.currentTimeMillis()-startTime;
+		log.info("请求url：{}，请求耗时：{}，请求类名：{}，请求方法：{}，请求参数:{}，请求结果：{}",url,costTime,className,methodName,params.toString(), result);
+		return result;
 	}
+
 
 	@AfterThrowing(pointcut = "execution(* com.phr..controller..*.*(..))", throwing = "ex")
 	public void doExceptionActions(JoinPoint jp, Throwable ex) {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/phr.iml" filepath="$PROJECT_DIR$/phr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phr-code-generator/phr-code-generator.iml" filepath="$PROJECT_DIR$/phr-code-generator/phr-code-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phr-common/phr-common.iml" filepath="$PROJECT_DIR$/phr-common/phr-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phr-core/phr-core.iml" filepath="$PROJECT_DIR$/phr-core/phr-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phr-rest/phr-rest.iml" filepath="$PROJECT_DIR$/phr-rest/phr-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phr-test/phr-test.iml" filepath="$PROJECT_DIR$/phr-test/phr-test.iml" />
+    </modules>
+  </component>
+</project>

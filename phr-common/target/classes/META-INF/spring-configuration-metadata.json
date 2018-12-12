@@ -1,0 +1,63 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "name": "cache.redis",
+      "type": "com.phr.common.redis.RedisPoolConfig"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisClusterConfig",
+      "name": "spring.redis1.cluster",
+      "type": "com.phr.common.redis.RedisClusterConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "name": "cache.redis.cache-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "name": "cache.redis.database",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "defaultValue": false,
+      "name": "cache.redis.enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "name": "cache.redis.host-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "name": "cache.redis.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "name": "cache.redis.pool",
+      "type": "java.util.Map<java.lang.String,java.lang.String>"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "name": "cache.redis.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisPoolConfig",
+      "name": "cache.redis.timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.phr.common.redis.RedisClusterConfig",
+      "name": "spring.redis1.cluster.nodes",
+      "type": "java.lang.String"
+    }
+  ]
+}
