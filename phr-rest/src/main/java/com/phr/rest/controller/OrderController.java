@@ -7,6 +7,8 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import com.phr.common.dto.ResponseCode;
+import com.phr.rest.exception.AppException;
 import com.phr.rest.remote.feign.UserClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,8 +72,20 @@ public class OrderController {
 //        ResultData resultData=ResultDataUtil.successResult("操作成功！");
 		return resultData;
 	}
-	@GetMapping("/getUserData")
+	@PostMapping("/getUserData")
 	public ResultData getUserData(@RequestParam(value = "name",defaultValue = "zhangshan") String name,@RequestParam(value = "age",defaultValue = "18") String age){
+		ResultData rs=null;
+		rs.getStatus();
+
+		throw new AppException(ResponseCode.SUCCESS);
+
+
+		//rs=userClient.getUser();
+		//return rs;
+
+	}
+	@GetMapping("/getUserData1")
+	public ResultData getUserData1(@RequestParam(value = "name",defaultValue = "zhangshan") String name,@RequestParam(value = "age",defaultValue = "18") String age){
 		ResultData rs=new ResultData();
 		rs=userClient.getUser();
 		return rs;

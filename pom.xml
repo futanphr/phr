@@ -43,6 +43,7 @@
 		<zkclient.version>0.10</zkclient.version>
 		<skipTests>true</skipTests>
 		<rocketmq.version>3.2.6</rocketmq.version>
+		<lombok.version>1.18.0</lombok.version>
 	</properties>
 	<dependencies>
 		<!-- spring cloud 依赖配置
@@ -115,7 +116,12 @@
 				<artifactId>jedis</artifactId>
 				<version>${jedis.version}</version>
 			</dependency>
-
+			<!-- lombok -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+			</dependency>
 
 			<!-- 通用工具包 <dependency> <groupId>jfcf-quota-boot</groupId> <artifactId>jfcf-quota-common</artifactId> 
 				<version>${jfcf-quota-common.version}</version> </dependency> <dependency> 

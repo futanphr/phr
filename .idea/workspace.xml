@@ -5,12 +5,227 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88b15d0-e540-4017-8663-9d75c88351ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/phr-test/src/test/java/com/phr/test/unicode/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-common/target/classes/com/phr/common/dto/ResponseCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-common/target/classes/com/phr/common/dto/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/CommonExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/exception/AppException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/exception/CommonExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/phr_rest_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/phr_rest_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/phr-code-generator-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-common/phr-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/phr-common/phr-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phr-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResultData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-common/target/classes/com/phr/common/dto/ResultData.class" beforeDir="false" afterPath="$PROJECT_DIR$/phr-common/target/classes/com/phr/common/dto/ResultData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-common/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-common/target/phr-common-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-core/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-core/target/phr-core-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/phr-rest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/phr-rest/phr-rest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/aspect/AspectWebParamsLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/aspect/AspectWebParamsLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/remote/sevice/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/feign/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/remote/feign/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-test/src/test/java/com/phr/test/unicode/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/phr-test/src/test/java/com/phr/test/unicode/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/aspect/AspectWebParamsLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest.war.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/ApplicationStart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/aspect/AspectWebParamsLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/entity/PhrOrderEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/entity/PhrQuotaEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/entity/UserEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/mapper/PhrOrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/mapper/PhrOrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/mapper/PhrQuotaMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/mapper/PhrQuotaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/service/PhrOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/service/PhrQuotaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/service/impl/PhrOrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/service/impl/PhrQuotaServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/biz/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/config/ApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/config/AsyncConfig$AsyncException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/config/AsyncConfig$AsyncExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/config/AsyncConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/config/PageHelperConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/constants/CoreConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/controller/QuotaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/controller/ThreadLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/entity/request/RequestOrderEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/entity/request/RequestQuotaEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/entity/request/RequestUserEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mq/MqSenderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mq/RocketMqConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mq/RocketMqListener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mq/RocketMqListener$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mq/RocketMqListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/algorithm/ModuloDatabaseShardingAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/algorithm/ModuloTableShardingAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/config/DataSourceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/constants/DataSourceConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/constants/SqlConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/durid/DruidStatsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/durid/DruidStatsFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/durid/DruidStatsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybatis/shardingjdbc/enums/ShardingTableEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/mybiz/CountNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/service/CoreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/com/phr/rest/service/impl/CoreServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/sql/springboot.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/classes/sql/springboot2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/HdrHistogram-2.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/HikariCP-2.7.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/LatencyUtils-2.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/annotation-indexer-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/asm-4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/aspectjweaver-1.8.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/bridge-method-annotation-1.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/cglib-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/commons-cli-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/commons-lang3-3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/commons-pool2-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/commons-text-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/druid-1.1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/fastjson-1.2.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/github-api-1.59.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/guava-18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/hibernate-validator-6.0.7.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/httpasyncclient-4.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/httpclient-4.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/httpcore-4.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/httpcore-nio-4.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/httpmime-4.5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jackson-core-2.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jackson-databind-2.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jackson-datatype-jdk8-2.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jackson-datatype-jsr310-2.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jackson-module-parameter-names-2.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jedis-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/json-20160212.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jsqlparser-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/lettuce-core-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/log4j-to-slf4j-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/mapstruct-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/micrometer-core-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/mockito-all-1.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/mybatis-3.4.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/mybatis-spring-boot-autoconfigure-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/mybatis-spring-boot-starter-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/mysql-connector-java-5.1.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/netty-all-4.1.22.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/netty-buffer-4.1.22.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/netty-codec-4.1.22.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/netty-common-4.1.22.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/netty-handler-4.1.22.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/netty-resolver-4.1.22.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/netty-transport-4.1.22.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/pagehelper-5.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/pagehelper-spring-boot-autoconfigure-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/pagehelper-spring-boot-starter-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/phr-common-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/phr-core-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/reactive-streams-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/reactor-core-3.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/rocketmq-client-3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/rocketmq-common-3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/rocketmq-remoting-3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/rocketmq-srvutil-3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/rocketmq-store-3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/rocketmq-tools-3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/sharding-jdbc-core-1.5.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/snakeyaml-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-aop-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-beans-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-actuator-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-actuator-autoconfigure-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-autoconfigure-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-actuator-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-aop-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-data-redis-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-jdbc-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-json-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-logging-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-tomcat-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-boot-starter-web-2.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-context-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-context-support-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-core-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-data-commons-2.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-data-keyvalue-2.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-data-redis-2.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-expression-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-jcl-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-jdbc-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-oxm-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-plugin-core-1.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-plugin-metadata-1.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-tx-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-web-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/spring-webmvc-5.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/springfox-core-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/springfox-schema-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/springfox-spi-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/springfox-spring-web-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/springfox-swagger-common-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/springfox-swagger-ui-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/springfox-swagger2-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/swagger-annotations-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/swagger-models-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/tomcat-embed-core-8.5.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/tomcat-embed-el-8.5.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/tomcat-embed-websocket-8.5.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/unirest-java-1.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/phr-rest/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-test/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-test/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-test/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-test/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-test/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-test/target/phr-test-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/phr-core/target/" />
     <ignored path="$PROJECT_DIR$/phr-code-generator/target/" />
@@ -33,69 +248,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/resources/logback.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ApplicationStart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/ApplicationStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="204">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AspectWebParamsLog.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phr-common.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-common/phr-common.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="AspectWebParamsLog.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/aspect/AspectWebParamsLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="113" column="13" lean-forward="true" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/remote/feign/UserClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/remote/sevice/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="73" column="162" selection-start-line="73" selection-start-column="162" selection-end-line="73" selection-end-column="162" />
+            <state relative-caret-position="475">
+              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonExceptionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/CommonExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="67" column="72" lean-forward="true" selection-start-line="67" selection-start-column="72" selection-end-line="67" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1633#1649#0" expanded="true" />
-                <element signature="e#2024#2039#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/AppException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuntimeException.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/RuntimeException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+              <folding>
+                <element signature="e#1598#1599#0" expanded="true" />
+                <element signature="e#1628#1629#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResponseCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,7 +365,14 @@
       <find>请求结束</find>
       <find>class</find>
       <find>KafkaAnnotationDrivenConfiguration</find>
+      <find>lom</find>
+      <find>org.projectlombok</find>
+      <find>MethodArgumentNotValidException</find>
+      <find>=========&gt;</find>
     </findStrings>
+    <dirStrings>
+      <dir>$MAVEN_REPOSITORY$/cglib/cglib/3.1/cglib-3.1.jar</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,7 +382,6 @@
       <list>
         <option value="$PROJECT_DIR$/phr-rest/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/client/UserClient.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/config/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/config/FeignConfig.java" />
         <option value="$PROJECT_DIR$/phr-rest/pom.xml" />
@@ -145,10 +399,17 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/phr-test/src/test/java/com/phr/test/unicode/Test2.java" />
         <option value="$PROJECT_DIR$/phr-test/src/test/java/com/phr/test/unicode/Test3.java" />
-        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/aspect/AspectWebParamsLog.java" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/remote/feign/UserClient.java" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/remote/sevice/UserController.java" />
+        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/enums/ResponseCode.java" />
+        <option value="$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResultData.java" />
+        <option value="$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/Result.java" />
+        <option value="$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResponseCode.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/AppException.java" />
+        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/CommonExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/aspect/AspectWebParamsLog.java" />
       </list>
     </option>
   </component>
@@ -203,6 +464,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -215,65 +477,30 @@
             <path>
               <item name="phr" type="b2602c69:ProjectViewProjectNode" />
               <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="phr-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phr" type="462c0819:PsiDirectoryNode" />
+              <item name="phr-core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="phr" type="b2602c69:ProjectViewProjectNode" />
               <item name="phr" type="462c0819:PsiDirectoryNode" />
               <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="DefaultMQProducer&#9;PSI&#9;JAVA://com.alibaba.rocketmq.client.producer.DefaultMQProducer&#10;sw&#9;PSI&#9;JAVA://com.phr.rest.biz.config.SwaggerConfig&#10;sql&#9;FILE&#9;file:///Users/penghuari/Java/02_projects/phr/phr-rest/src/main/resources/sql" />
+    <property name="SearchEverywhereHistoryKey" value="enum&#9;PSI&#9;JAVA://com.phr.rest.mybatis.shardingjdbc.enums.ShardingTableEnum&#10;DefaultMQProducer&#9;PSI&#9;JAVA://com.alibaba.rocketmq.client.producer.DefaultMQProducer&#10;sw&#9;PSI&#9;JAVA://com.phr.rest.biz.config.SwaggerConfig&#10;sql&#9;FILE&#9;file:///Users/penghuari/Java/02_projects/phr/phr-rest/src/main/resources/sql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -286,10 +513,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.phr.common.dto" />
+      <recent name="com.phr.rest.enums" />
+      <recent name="com.phr.rest.exception" />
       <recent name="com.phr.rest.remote.sevice" />
       <recent name="com.phr.rest.remote.feign" />
-      <recent name="com.phr.test.unicode" />
-      <recent name="com.phr.rest.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/config" />
@@ -420,15 +648,16 @@
       <workItem from="1542620287132" duration="28233000" />
       <workItem from="1543299560075" duration="8534000" />
       <workItem from="1544090972272" duration="6920000" />
-      <workItem from="1544512461346" duration="3862000" />
+      <workItem from="1544512461346" duration="31282000" />
+      <workItem from="1545793391936" duration="167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50332000" />
+    <option name="totallyTimeSpent" value="77919000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -441,29 +670,29 @@
       <window_info id="Structure" order="1" sideWeight="0.50142854" side_tool="true" weight="0.24964234" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29090908" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41265476" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32969698" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.32969698" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32242423" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19636364" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7375566" visible="true" weight="0.2746781" />
-      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19636364" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7360483" visible="true" weight="0.2746781" />
+      <window_info anchor="bottom" id="Problems" order="9" weight="0.32969698" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.26244345" side_tool="true" visible="true" weight="0.2746781" />
+      <window_info id="Favorites" order="2" sideWeight="0.26395175" side_tool="true" visible="true" weight="0.2746781" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32969698" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,167 +706,30 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java</url>
-          <line>75</line>
+          <line>74</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/UserServiceImpl.java</url>
-          <line>115</line>
+          <url>file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java</url>
+          <line>81</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/UserServiceImpl.java</url>
-          <line>114</line>
+          <url>file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java</url>
+          <line>82</line>
           <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/phr-test/src/test/java/com/phr/test/unicode/Test2.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/phr-test/src/test/java/com/phr/test/unicode/Test2.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/phr-test/src/test/java/com/phr/test/unicode/Test2.java</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="26" />
+      <option name="time" value="37" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/validate/ValidateEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/config/PageHelperConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-swagger/src/main/java/com/phr/Start.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/config/SwaggerConfig.java" />
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/config/RedisConfig.java" />
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/service/CoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.0.0.RELEASE/spring-boot-starter-web-2.0.0.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/client/UserClient.java" />
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-dependencies/Finchley.RC2/spring-cloud-dependencies-Finchley.RC2.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="152" column="63" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-openfeign/2.0.0.RC2/spring-cloud-starter-openfeign-2.0.0.RC2.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638" />
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-tools/3.2.6/rocketmq-tools-3.2.6.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.1/feign-core-9.5.1-sources.jar!/feign/Retryer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.1/feign-core-9.5.1-sources.jar!/feign/RequestLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.3/jackson-databind-2.9.3-sources.jar!/com/fasterxml/jackson/databind/DeserializationFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="348" column="4" selection-start-line="348" selection-start-column="4" selection-end-line="348" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResultData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/2.0.3.RELEASE/spring-boot-devtools-2.0.3.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/mq/RocketMqConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/config/AsyncConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/consumer/DefaultMQPushConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -716,13 +808,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/config/ApplicationConfig.java" />
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="153" column="10" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/config/FeignConfig.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -766,37 +851,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/ApplicationStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/feign/UserClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1760#1761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/feign/UserClient.java" />
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/UserController.java" />
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/remote/feign/UserClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -811,22 +867,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/aspect/AspectWebParamsLog.java">
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="113" column="13" lean-forward="true" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        <state relative-caret-position="232">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47-sources.jar!/com/alibaba/fastjson/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="574" column="25" selection-start-line="574" selection-start-column="25" selection-end-line="574" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28-sources.jar!/javax/servlet/http/HttpServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="237" column="32" selection-start-line="237" selection-start-column="18" selection-end-line="237" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28-sources.jar!/javax/servlet/ServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="214" column="48" selection-start-line="214" selection-start-column="33" selection-end-line="214" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE-sources.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="654" column="7" lean-forward="true" selection-start-line="654" selection-start-column="7" selection-end-line="654" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.2/commons-lang3-3.2-sources.jar!/org/apache/commons/lang3/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="304" column="26" selection-start-line="304" selection-start-column="26" selection-end-line="304" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="113" column="16" lean-forward="true" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/mybatis/shardingjdbc/enums/ShardingTableEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/enums/ResponseCode.java" />
+    <entry file="file://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20.pom" />
+    <entry file="file://$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResultData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/objects/annotations/Getter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.0/lombok-1.18.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="120" column="27" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/phr-rest.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.0/lombok-1.18.0.jar!/lombok/AllArgsConstructor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="153" column="10" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-common/phr-common.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/RuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResponseCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/AppException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/CommonExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="67" column="72" lean-forward="true" selection-start-line="67" selection-start-column="72" selection-end-line="67" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="73" column="162" selection-start-line="73" selection-start-column="162" selection-end-line="73" selection-end-column="162" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1633#1649#0" expanded="true" />
-            <element signature="e#2024#2039#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="475">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/ApplicationStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/aspect/AspectWebParamsLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>

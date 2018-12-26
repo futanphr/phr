@@ -151,7 +151,7 @@
           <element id="library" level="project" name="Maven: org.jvnet:animal-sniffer-annotation:1.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.3" />
-          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.20" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.0" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: cglib:cglib:3.1" />

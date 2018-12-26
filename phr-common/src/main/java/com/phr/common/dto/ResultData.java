@@ -1,5 +1,8 @@
 package com.phr.common.dto;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+
 public class ResultData {
 
 	/**失败状态0*/
