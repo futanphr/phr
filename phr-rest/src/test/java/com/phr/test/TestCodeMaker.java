@@ -1,6 +1,7 @@
 package com.phr.test;
 
 import com.snailf.config.CodeGenerator;
+import com.snailf.config.CodeGeneratorLinux;
 
 
 public class TestCodeMaker {
@@ -12,13 +13,13 @@ public class TestCodeMaker {
 	// 数据库用户名
 	private static String userName = "root";
 	// 数据库密码
-	private static String password = "root";
+	private static String password = "root123";
 	
 	// 数据库名称
 	private static String dbName = "springboot";
 	// 要生成代码的表名
-	private static String tableName = "t_phr_quota";
-	// 基础包名
+	private static String tableName = "t_phr_order";
+	// 基础包名 windows写法
 	private static String basePackage = "com.phr.rest";
 	// 业务包名
 	private static String servicePackage = "biz";
@@ -28,7 +29,7 @@ public class TestCodeMaker {
 	// private static String projectName = "code-generator";
 
 	public static void main(String[] args) {
-		CodeGenerator code = new CodeGenerator(ip, port, userName, password, dbName, tableName, basePackage,
+		CodeGeneratorLinux code = new CodeGeneratorLinux(ip, port, userName, password, dbName, tableName, basePackage,
 				servicePackage);
 		code.run();
 		
