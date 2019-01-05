@@ -1,17 +1,17 @@
-package com.phr.rest.biz.service;
+package com.phr.rest.biz.mapper;
 
 import com.phr.rest.biz.entity.PhrOrderEntity;
 import java.util.Map;
 import java.util.List;
-import com.phr.core.entity.PageInfo;
+//import org.apache.ibatis.session.RowBounds;
 /**
  *
- * @time 2018年12月28日 17:30:50
+ * @time 2019年01月06日 00:00:23
  * @version 1.0
  *
  **/
 
-public interface PhrOrderService  {
+public interface PhrOrderMapper  {
   	/**
 	 * 通过主键id 删除
 	 * @param id
@@ -31,8 +31,7 @@ public interface PhrOrderService  {
 	 */
 	PhrOrderEntity selectByPrimaryKey(Long id);
 	/**
-	 * 通过map参数 获取实体对象
-	 * @param id
+	 * 通过map 获取实体对象
 	 * @return
 	 */
 	PhrOrderEntity selectByKeys(Map<String,Object> params);
@@ -51,9 +50,9 @@ public interface PhrOrderService  {
 	/**
 	 * 通过map参数获取列表 分页
 	 * @param params
-	 * @return PageInfo<PhrOrderEntity>
+	 * @return List<PhrOrderEntity>
 	 */
-	PageInfo<PhrOrderEntity> getListByPage(Map<String,Object> params,Integer currentPage,Integer pageSize);
+	List<PhrOrderEntity> getListByPage(Map<String,Object> params);
 	/**
 	 * 通过map参数获取 总数
 	 * @param params

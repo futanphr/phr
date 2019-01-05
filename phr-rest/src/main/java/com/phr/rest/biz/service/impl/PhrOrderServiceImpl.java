@@ -15,7 +15,7 @@ import com.github.pagehelper.PageHelper;
 //import org.apache.ibatis.session.RowBounds;
 /**
  *
- * @time 2018年12月28日 17:30:50
+ * @time 2019年01月06日 00:00:24
  * @version 1.0
  *
  **/
@@ -52,7 +52,6 @@ public class PhrOrderServiceImpl  implements PhrOrderService{
 	}
 	/**
 	 * 通过map 获取实体对象
-	 * @param id
 	 * @return
 	 */
 	public PhrOrderEntity selectByKeys(Map<String,Object> params){

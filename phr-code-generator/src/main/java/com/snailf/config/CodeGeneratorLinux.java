@@ -25,8 +25,8 @@ public class CodeGeneratorLinux {
 	private String tableName;
 	//用户的当前工作目录
 	private String projectPath = System.getProperty("user.dir")+"/phr-rest";
-	private String classPath = projectPath + "/src/main/java/";
-	private String resourcesPath = projectPath + "/src/main/resources/";
+	private String classPath = projectPath + "/src/main/java";
+	private String resourcesPath = projectPath + "/src/main/resources";
 	// public CodeGenerator() {
 	// init();
 	// }
@@ -100,18 +100,23 @@ public class CodeGeneratorLinux {
 
 	public void run() {
 
+		//获取表信息
 		Map<String, Object> tableMap = DBMSMetaUtil.selectTable(databasetype, ip, port, dbname, username, password,
 				tableName);
+		//获取字段信息
 		List<Map<String, Object>> columns = DBMSMetaUtil.listColumns(databasetype, ip, port, dbname, username,
 				password, tableName);
+		//获取主键字段信息
 		List<Map<String, Object>> pkColumns = DBMSMetaUtil.listPkColumn(databasetype, ip, port, dbname, username,
 				password, tableName);
 
-		//
+		//转换成小写
 		tableMap = MapUtil.convertKey2LowerCase(tableMap);
 		columns = MapUtil.convertKeyList2LowerCase(columns);
 		pkColumns = MapUtil.convertKeyList2LowerCase(pkColumns);
 
+		//创建包名
+		///Users/penghuari/Java/02_projects/phr/phr-rest/src/main/java//com.phr.rest/biz/
 		String entityPackage = mkdirPackage();
 		String entityName = ColumnUtil.getEntityName(tableName);
 		String entityRemark = String.valueOf(tableMap.get("remarks"));
@@ -165,8 +170,8 @@ public class CodeGeneratorLinux {
 	 * 构建包
 	 */
 	public String mkdirPackage() {
-		String[] baseArrs = basepackage.split("/.");
-		String[] mpackageArrs = mpackage.split("/.");
+		String[] baseArrs = basepackage.split("\\.");
+		String[] mpackageArrs = mpackage.split("\\.");
 		String packagePath = classPath;
 
 		if (baseArrs != null) {
