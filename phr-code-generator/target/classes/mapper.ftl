@@ -7,6 +7,7 @@ package ${basepackage}.${mpackage}.mapper;
 import ${basepackage}.${mpackage}.entity.${className}Entity;
 import java.util.Map;
 import java.util.List;
+import java.util.Optional;
 //import org.apache.ibatis.session.RowBounds;
 /**
  *
@@ -16,12 +17,6 @@ import java.util.List;
  **/
 
 public interface ${className}Mapper  {
-  	/**
-	 * 通过主键id 删除
-	 * @param id
-	 * @return
-	 */
-	int deleteByPrimaryKey(Long id);
 	/**
 	 * 插入实体
 	 * @param record
@@ -33,30 +28,47 @@ public interface ${className}Mapper  {
 	 * @param id
 	 * @return
 	 */
-	${className}Entity selectByPrimaryKey(Long id);
-	/**
-	 * 通过map 获取实体对象
-	 * @return
-	 */
-	${className}Entity selectByKeys(Map<String,Object> params);
+	Optional<${className}Entity> selectByPrimaryKey(Long id);
 	/**
 	 * 通过主键id 更新实体
 	 * @param record
 	 * @return 1成功  其它失败
 	 */
 	int updateByPrimaryKeySelective(${className}Entity record);
+  	/**
+	 * 通过主键id 删除
+	 * @param id
+	 * @return
+	 */
+	int deleteByPrimaryKey(Long id);
+
+	/**
+	 * 通过map 获取实体对象
+	 * @return
+	 */
+	Optional<${className}Entity> getEntityByParams(Map<String,Object> params);
 	/**
 	 * 通过map参数获取列表
 	 * @param params
 	 * @return List<${className}Entity>
+    */
+    Optional<List<${className}Entity>> getListByParams(Map<String,Object> params);
+	/**
+	 * 通过对象中的某些字段 获取实体对象
+	 * @return
 	 */
-	List<${className}Entity> getList(Map<String,Object> params);
+    Optional<${className}Entity> getEntityByKeys(${className}Entity entity);
+    /**
+    * 通过对象中的某些字段获取列表
+    * @return List<${className}Entity>
+    */
+	Optional<List<${className}Entity>> getListByKeys(${className}Entity entity);
 	/**
 	 * 通过map参数获取列表 分页
 	 * @param params
 	 * @return List<${className}Entity>
 	 */
-	List<${className}Entity> getListByPage(Map<String,Object> params);
+    List<${className}Entity> getListByPage(Map<String,Object> params);
 	/**
 	 * 通过map参数获取 总数
 	 * @param params

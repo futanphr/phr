@@ -7,34 +7,26 @@ import ${basepackage}.${mpackage}.service.${className}Service;
 import ${basepackage}.${mpackage}.mapper.${className}Mapper;
 import java.util.Map;
 import java.util.List;
-import com.phr.core.entity.PageInfo;
-
+import java.util.Optional;
+import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import com.github.pagehelper.PageHelper;
-//import org.apache.ibatis.session.RowBounds;
+import com.github.pagehelper.PageInfo;
+
 /**
  *
  * @time ${createTime}
  * @version 1.0
- *
+ * @description 与数据库中表${tableName}相应操作的实现
  **/
 @Service("${firsetLowerClassName}Service")
 public class ${className}ServiceImpl  implements ${className}Service{
 
 	@Autowired
 	private ${className}Mapper ${firsetLowerClassName}Mapper;
-  	/**
-	 * 通过主键id 删除
-	 * @param id
-	 * @return
-	 */
-	@Transactional(propagation = Propagation.REQUIRED, readOnly = false, rollbackFor = RuntimeException.class)
-	public int deleteByPrimaryKey(Long id){
-		return	${firsetLowerClassName}Mapper.deleteByPrimaryKey(id);
-	}
 	/**
 	 * 插入实体
 	 * @param record
@@ -49,15 +41,8 @@ public class ${className}ServiceImpl  implements ${className}Service{
 	 * @param id
 	 * @return
 	 */
-	public ${className}Entity selectByPrimaryKey(Long id){
+	public Optional<${className}Entity> selectByPrimaryKey(Long id){
 		return ${firsetLowerClassName}Mapper.selectByPrimaryKey(id);
-	}
-	/**
-	 * 通过map 获取实体对象
-	 * @return
-	 */
-	public ${className}Entity selectByKeys(Map<String,Object> params){
-		return ${firsetLowerClassName}Mapper.selectByKeys(params);
 	}
 	/**
 	 * 通过主键id 更新实体
@@ -69,27 +54,56 @@ public class ${className}ServiceImpl  implements ${className}Service{
 		return ${firsetLowerClassName}Mapper.updateByPrimaryKeySelective(record);
 	}
 	/**
+	 * 通过主键id 删除
+	 * @param id
+	 * @return
+	 */
+	@Transactional(propagation = Propagation.REQUIRED, readOnly = false, rollbackFor = RuntimeException.class)
+	public int deleteByPrimaryKey(Long id){
+		return	${firsetLowerClassName}Mapper.deleteByPrimaryKey(id);
+	}
+	/**
+	 * 通过map 获取实体对象
+	 * @return
+	 */
+	public Optional<${className}Entity> getEntityByParams(Map<String,Object> params){
+		return ${firsetLowerClassName}Mapper.getEntityByParams(params);
+	}
+	/**
 	 * 通过map参数获取列表
 	 * @param params
 	 * @return List<${className}Entity>
+    */
+    public Optional<List<${className}Entity>> getListByParams(Map<String,Object> params){
+        return  ${firsetLowerClassName}Mapper.getListByParams(params);
+    }
+	/**
+	 * 通过对象中的某些字段 获取实体对象
+	 * @return
 	 */
-	public List<${className}Entity> getList(Map<String,Object> params){
-		return  ${firsetLowerClassName}Mapper.getList(params);
+	public Optional<${className}Entity> getEntityByKeys(${className}Entity entity){
+		return ${firsetLowerClassName}Mapper.getEntityByKeys(entity);
 	}
+    /**
+    * 通过对象中的某些字段获取列表
+    * @return List<${className}Entity>
+	*/
+    public Optional<List<${className}Entity>> getListByKeys(${className}Entity entity){
+    return  ${firsetLowerClassName}Mapper.getListByKeys(entity);
+    }
 	/**
 	 * 通过map参数获取列表 分页
 	 * @param params
 	 * @return PageInfo<${className}Entity>
 	 */
 
-	public PageInfo<${className}Entity> getListByPage(Map<String,Object> params,Integer currentPage,Integer pageSize){
-	    currentPage =( currentPage == null || currentPage == 0 ) ? 1 : currentPage;
+	public PageInfo<${className}Entity> getListByPage(Map<String,Object> params,Integer pageNo,Integer pageSize,Integer navigatePages){
+        pageNo =( pageNo == null || pageNo == 0 ) ? 1 : pageNo;
         pageSize = ( pageSize == null || pageSize == 0 ) ? 10 : pageSize;
-		PageHelper.startPage(currentPage,pageSize);
-		List<${className}Entity> list = ${firsetLowerClassName}Mapper.getList(params);
-		Integer total = ${firsetLowerClassName}Mapper.getListCount(params);
-		PageInfo<${className}Entity> pageInfo = new PageInfo<${className}Entity>(currentPage, pageSize, total);
-		pageInfo.setItems(list);
+        navigatePages=( navigatePages == null || navigatePages == 0 ) ? 10 : navigatePages;
+		PageHelper.startPage(pageNo,pageSize);
+		List<${className}Entity> list = ${firsetLowerClassName}Mapper.getListByParams(params).orElse(new ArrayList<>());
+		PageInfo<${className}Entity> pageInfo = new PageInfo<${className}Entity>(list, navigatePages);
 		return pageInfo;
 	}
 	/**

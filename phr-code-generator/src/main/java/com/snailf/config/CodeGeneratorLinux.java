@@ -117,7 +117,7 @@ public class CodeGeneratorLinux {
 
 		//创建包名
 		///Users/penghuari/Java/02_projects/phr/phr-rest/src/main/java//com.phr.rest/biz/
-		String entityPackage = mkdirPackage();
+		String packagePath = mkdirPackage();
 		String entityName = ColumnUtil.getEntityName(tableName);
 		String entityRemark = String.valueOf(tableMap.get("remarks"));
 
@@ -129,23 +129,23 @@ public class CodeGeneratorLinux {
 		try {
 			hf.init(resourcesPath);
 			// 生成实体对象
-			if (isExistFile(entityPackage + "/entity/" + entityName + "Entity.java")) {
-				System.out.println(entityPackage + "/entity/" + entityName + "Entity.java" + "  已经存在");
+			/*if (isExistFile(packagePath + "/entity/" + entityName + "Entity.java")) {
+				System.out.println(packagePath + "/entity/" + entityName + "Entity.java" + "  已经存在");
 			} else {
-				hf.process(map, entityPackage + "/entity/", entityName + "Entity.java", "pojo.ftl");
+				hf.process(map, packagePath + "/entity/", entityName + "Entity.java", "pojo.ftl");
 			}
-			String mapperPackage = mkdirPackage();
-			if (isExistFile(mapperPackage + "/mapper/" + entityName + "Mapper.java")) {
-				System.out.println(mapperPackage + "/mapper/" + entityName + "Mapper.java 已经存在");
+			//String mapperPackage = mkdirPackage();
+			if (isExistFile(packagePath + "/mapper/" + entityName + "Mapper.java")) {
+				System.out.println(packagePath + "/mapper/" + entityName + "Mapper.java 已经存在");
 			} else {
-				hf.process(map, mapperPackage + "/mapper/", entityName + "Mapper.java", "mapper.ftl");
+				hf.process(map, packagePath + "/mapper/", entityName + "Mapper.java", "mapper.ftl");
 			}
 			Map<String, Object> mapperMap = MapperUtil.createMapper(basepackage, mpackage, entityName, tableName,
 					columns, pkColumns.get(0));
-			if (isExistFile(mapperPackage + "/mapper/" + entityName + "Mapper.xml")) {
-				System.out.println(mapperPackage + "/mapper/" + entityName + "Mapper.xml 已经存在");
+			if (isExistFile(packagePath + "/mapper/" + entityName + "Mapper.xml")) {
+				System.out.println(packagePath + "/mapper/" + entityName + "Mapper.xml 已经存在");
 			} else {
-				hf.process(mapperMap, mapperPackage + "/mapper/", entityName + "Mapper.xml", "mapperXml.ftl");
+				hf.process(mapperMap, packagePath + "/mapper/", entityName + "Mapper.xml", "mapperXml.ftl");
 			}
 			// 生成service
 			Map<String, Object> serviceMap = ServiceUtil.createMapper(basepackage, mpackage, entityName, tableName,
@@ -160,7 +160,20 @@ public class CodeGeneratorLinux {
 			} else {
 				hf.process(serviceMap, mapperPackage + "/service/impl/", entityName + "ServiceImpl.java",
 						"serviceImpl.ftl");
-			}
+			}*/
+
+			hf.process(map, packagePath + "/entity/", entityName + "Entity.java", "pojo.ftl");
+			hf.process(map, packagePath + "/mapper/", entityName + "Mapper.java", "mapper.ftl");
+			Map<String, Object> mapperMap = MapperUtil.createMapper(basepackage, mpackage, entityName, tableName,
+				columns, pkColumns.get(0));
+			hf.process(mapperMap, packagePath + "/mapper/", entityName + "Mapper.xml", "mapperXml.ftl");
+			// 生成service
+			Map<String, Object> serviceMap = ServiceUtil.createMapper(basepackage, mpackage, entityName, tableName,
+				columns, pkColumns.get(0));
+			hf.process(serviceMap, packagePath + "/service/", entityName + "Service.java", "service.ftl");
+			hf.process(serviceMap, packagePath + "/service/impl/", entityName + "ServiceImpl.java",
+					"serviceImpl.ftl");
+			System.out.println("恭喜你，本次自动生成代码成功!");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -203,7 +216,7 @@ public class CodeGeneratorLinux {
 	public static boolean createDir(String destDirName) {
 		File dir = new File(destDirName);
 		if (dir.exists()) {// 判断目录是否存在
-			System.out.println("包名已经存在！[" + destDirName + "]");
+			System.out.println("本次生成代码时，使用已存在包名，因为包名已存在！[" + destDirName + "]");
 			return false;
 		}
 		if (!destDirName.endsWith(File.separator)) {// 结尾是否以"/"结束

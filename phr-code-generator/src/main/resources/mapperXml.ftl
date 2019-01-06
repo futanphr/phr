@@ -8,37 +8,50 @@
     <sql id="Base_Column_List">
     	 ${baseColumnList}
     </sql>
-    
+
+    <insert id="insertSelective" parameterType="${resultType}">
+	${insertSql}
+    </insert>
+
     <select id="selectByPrimaryKey" resultMap="BaseResultMap"
 		parameterType="java.lang.Long">
 		${selectSql}
 	</select>
-	<select id="selectByKeys" resultMap="BaseResultMap"
-		parameterType="java.util.Map">
-		${selectSql}
-	</select>
+
+    <update id="updateByPrimaryKeySelective" parameterType="${resultType}">
+	${updateSql}
+    </update>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
 		${deleteSql}
 	</delete>
 	
-	<insert id="insertSelective" parameterType="${resultType}">
-		${insertSql}
-	</insert>
-	
-	<update id="updateByPrimaryKeySelective" parameterType="${resultType}">
-		${updateSql}
-	</update>
-	
-	 <select id="getList" resultMap="BaseResultMap"
+	<select id="getEntityByParams" resultMap="BaseResultMap"
+        parameterType="java.util.Map">
+	${listSql}
+    </select>
+
+    <select id="getListByParams" resultMap="BaseResultMap"
+        parameterType="java.util.Map">
+	${listSql}
+    </select>
+
+    <select id="getEntityByKeys" resultMap="BaseResultMap"
+        parameterType="${resultType}">
+	${listSql}
+    </select>
+
+    <select id="getListByKeys" resultMap="BaseResultMap"
+        parameterType="${resultType}">
+	${listSql}
+    </select>
+
+	<select id="getListByPage" resultMap="BaseResultMap"
 		parameterType="java.util.Map">
 		${listSql}
 	</select>
-	 <select id="getListByPage" resultMap="BaseResultMap"
-		parameterType="java.util.Map">
-		${listSql}
-	</select>
-	 <select id="getListCount" resultType="java.lang.Integer"
+
+	<select id="getListCount" resultType="java.lang.Integer"
 		parameterType="java.util.Map">
 		${listCountSql}
 	</select>

@@ -19,13 +19,11 @@ import java.math.BigDecimal;
  </#if>
  * @time ${table.createTime}
  * @version 1.0
- *
+ * @description 数据库表对应的实体类，类中属性与数据库字段对应
  **/
 
 @SuppressWarnings("serial")
 public class ${className}Entity implements Serializable  {
-  
-    
     <#list table.columns as column>
     <#if column.remarks ??>
     /**
@@ -34,7 +32,6 @@ public class ${className}Entity implements Serializable  {
     </#if>
     private ${column.simpleJavaType} ${column.columnNameLower};
     </#list>
-
 <@generateJavaColumns/>
 
 <#macro generateJavaColumns>
@@ -64,5 +61,33 @@ public class ${className}Entity implements Serializable  {
         return this.${column.columnNameLower};
     }
     </#list>
+
+    /**
+     * 以下代码是采用设计模式中的建造者模式，链式编程
+     * 例如创建一个对象，并且给对象的id赋值100，
+     * 我们可以这么写：${className}Entity entity=new ${className}Entity.Builder.setId(100).build();
+     */
+    public static class Builder{
+    <#list table.columns as column>
+    private ${column.simpleJavaType} ${column.columnNameLower};
+    </#list>
+
+    <#list table.columns as column>
+    public Builder set${column.columnName}(${column.simpleJavaType} ${column.columnNameLower}) {
+        this.${column.columnNameLower} = ${column.columnNameLower};
+        return this;
+    }
+    </#list>
+
+    public ${className}Entity build(){
+        return new ${className}Entity(this);
+    }
+    }
+
+    public ${className}Entity(Builder builder){
+    <#list table.columns as column>
+      this.${column.columnNameLower} = builder.${column.columnNameLower};
+    </#list>
+    }
 </#macro>
 }

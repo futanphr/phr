@@ -5,32 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88b15d0-e540-4017-8663-9d75c88351ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestOK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGeneratorLinux.java" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGeneratorLinux.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-code-generator/src/main/resources/mapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/src/main/resources/mapper.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/src/main/resources/mapperXml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/src/main/resources/mapperXml.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/src/main/resources/pojo.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/src/main/resources/pojo.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/src/main/resources/service.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/src/main/resources/service.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-code-generator/src/main/resources/serviceImpl.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/src/main/resources/serviceImpl.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/classes/com/snailf/config/CodeGeneratorLinux.class" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/target/classes/com/snailf/config/CodeGeneratorLinux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/classes/mapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/target/classes/mapper.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com.phr.rest/biz/entity/PhrOrderEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com.phr.rest/biz/mapper/PhrOrderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com.phr.rest/biz/mapper/PhrOrderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com.phr.rest/biz/service/PhrOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com.phr.rest/biz/service/impl/PhrOrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/service/CoreService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/service/impl/CoreServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com.phr.rest/biz/mapper/PhrOrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-code-generator/target/classes/pojo.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/phr-code-generator/target/classes/pojo.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/entity/PhrOrderEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrOrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrOrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/PhrOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/PhrOrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java" beforeDir="false" afterPath="$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/biz/entity/PhrOrderEntity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/biz/mapper/PhrOrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/biz/mapper/PhrOrderMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/biz/service/PhrOrderService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/biz/service/impl/PhrOrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/service/CoreService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phr-rest/target/classes/com/phr/rest/service/impl/CoreServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.phr.rest/biz/entity/PhrOrderEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.phr.rest/biz/mapper/PhrOrderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.phr.rest/biz/mapper/PhrOrderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.phr.rest/biz/service/PhrOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.phr.rest/biz/service/impl/PhrOrderServiceImpl.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/phr-core/target/" />
     <ignored path="$PROJECT_DIR$/phr-code-generator/target/" />
@@ -48,6 +42,11 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/phr$TestCodeMakerLinux.ic" NAME="TestCodeMakerLinux Coverage Results" MODIFIED="1546754295675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.phr.test.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="phr" />
   </component>
@@ -56,79 +55,78 @@
       <file leaf-file-name="TestCodeMakerLinux.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="189">
+              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhrOrderEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/entity/PhrOrderEntity.java">
+      <file leaf-file-name="PhrOrderService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/PhrOrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FreemarkerUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/tools/FreemarkerUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Template.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.28/freemarker-2.3.28-sources.jar!/freemarker/template/Template.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <caret line="381" column="16" selection-start-line="381" selection-start-column="16" selection-end-line="381" selection-end-column="16" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhrOrderMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrOrderMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-321">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhrOrderServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/PhrOrderServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-576">
-              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serviceImpl.ftl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/serviceImpl.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhrOrderMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrOrderMapper.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="CodeGeneratorLinux.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGeneratorLinux.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="173" column="50" selection-start-line="173" selection-start-column="50" selection-end-line="173" selection-end-column="50" />
+            <state relative-caret-position="330">
+              <caret line="175" column="36" selection-start-line="175" selection-start-column="36" selection-end-line="175" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapper.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/mapper.ftl">
+      <file leaf-file-name="service.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/service.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serviceImpl.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/serviceImpl.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/test.ftl">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="mapperXml.ftl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/mapperXml.ftl">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="pojo.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/pojo.ftl">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -137,6 +135,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -161,6 +160,12 @@
       <find>basepackage</find>
       <find>mpackage</find>
       <find>basePackage</find>
+      <find>getList</find>
+      <find>updateByPrimaryKeySelective</find>
+      <find>columnNameLower</find>
+      <find>selectByKeys</find>
+      <find>getListByKeys</find>
+      <find>entityPackage</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -205,16 +210,21 @@
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/AppException.java" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/exception/CommonExceptionHandler.java" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/aspect/AspectWebParamsLog.java" />
-        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/PhrOrderService.java" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/PhrOrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMaker.java" />
-        <option value="$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGeneratorLinux.java" />
-        <option value="$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java" />
         <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrOrderMapper.java" />
+        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/entity/PhrOrderEntity.java" />
+        <option value="$PROJECT_DIR$/phr-code-generator/src/main/resources/mapperXml.ftl" />
+        <option value="$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java" />
         <option value="$PROJECT_DIR$/phr-code-generator/src/main/resources/mapper.ftl" />
+        <option value="$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestOK.java" />
+        <option value="$PROJECT_DIR$/phr-code-generator/src/main/resources/pojo.ftl" />
         <option value="$PROJECT_DIR$/phr-code-generator/src/main/resources/serviceImpl.ftl" />
+        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/PhrOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGeneratorLinux.java" />
+        <option value="$PROJECT_DIR$/phr-code-generator/src/main/resources/service.ftl" />
+        <option value="$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/PhrOrderService.java" />
       </list>
     </option>
   </component>
@@ -357,83 +367,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
               <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="phr-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="phr" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -492,17 +426,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.phr.test.unicode.Test2" />
-      <module name="phr-test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.phr.test.unicode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.phr.test.unicode.Test3" />
       <module name="phr-test" />
@@ -527,6 +450,17 @@
     </configuration>
     <configuration name="TestCodeMakerLinux" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.phr.test.TestCodeMakerLinux" />
+      <module name="phr-rest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phr.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TestOK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.phr.test.TestOK" />
       <module name="phr-rest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -584,18 +518,18 @@
     <list>
       <item itemvalue="Spring Boot.ApplicationStart" />
       <item itemvalue="Application.ApplicationStart" />
-      <item itemvalue="Application.Test2" />
       <item itemvalue="Application.Test3" />
       <item itemvalue="Application.TestCodeMaker" />
       <item itemvalue="Application.TestCodeMakerLinux" />
+      <item itemvalue="Application.TestOK" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestCodeMakerLinux" />
+        <item itemvalue="Application.TestOK" />
         <item itemvalue="Application.TestCodeMaker" />
         <item itemvalue="Application.ApplicationStart" />
         <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -622,12 +556,12 @@
       <workItem from="1544512461346" duration="31282000" />
       <workItem from="1545793391936" duration="14042000" />
       <workItem from="1546484251165" duration="477000" />
-      <workItem from="1546700721987" duration="3027000" />
+      <workItem from="1546700721987" duration="20831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95298000" />
+    <option name="totallyTimeSpent" value="113102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -635,7 +569,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.20171674" />
+      <window_info anchor="right" id="Maven Projects" order="3" sideWeight="0.4955277" weight="0.20171674" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -652,12 +586,14 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32242423" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.50447226" side_tool="true" weight="0.20171674" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32969698" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.27272728" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82647586" visible="true" weight="0.28183118" />
       <window_info anchor="bottom" id="Problems" order="9" weight="0.32969698" />
-      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="4" sideWeight="0.49910554" weight="0.3297568" />
       <window_info id="Web" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.17352416" side_tool="true" weight="0.2746781" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -665,7 +601,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="2" />
@@ -720,19 +655,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java</url>
-          <line>32</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java</url>
-          <line>34</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGeneratorLinux.java</url>
-          <line>172</line>
+          <line>185</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
@@ -744,60 +679,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/mybatis/shardingjdbc/enums/ShardingTableEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/enums/ResponseCode.java" />
-    <entry file="file://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20.pom" />
-    <entry file="file://$PROJECT_DIR$/phr-common/src/main/java/com/phr/common/dto/ResultData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/objects/annotations/Getter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.0/lombok-1.18.0.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="120" column="27" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/phr-rest.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.0/lombok-1.18.0.jar!/lombok/AllArgsConstructor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="153" column="10" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phr-common/phr-common.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -858,7 +739,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrQuotaMapper.java" />
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/PhrOrderService.java" />
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/OrderController.java" />
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/controller/QuotaController.java" />
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/remote/sevice/UserController.java" />
@@ -867,13 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-core/src/main/java/com/phr/core/entity/PageInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -905,13 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="221" column="53" lean-forward="true" selection-start-line="221" selection-start-column="53" selection-end-line="221" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/tools/FreemarkerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -980,61 +846,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGeneratorLinux.java">
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="173" column="50" selection-start-line="173" selection-start-column="50" selection-end-line="173" selection-end-column="50" />
+        <state relative-caret-position="541">
+          <caret line="153" column="10" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/mapper.ftl">
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestRedis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/mapperXml.ftl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/pojo.ftl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java">
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrOrderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="493">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-core/src/main/java/com/phr/core/entity/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-542">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="285" column="35" selection-start-line="285" selection-start-column="35" selection-end-line="285" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/entity/PhrOrderEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="500">
+          <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrOrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/mapper/PhrOrderMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="170">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/PhrOrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestOK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576">
-          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2011">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/mapper.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="104" column="51" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/pojo.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/test.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/mapperXml.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.28/freemarker-2.3.28-sources.jar!/freemarker/template/Template.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="381" column="16" selection-start-line="381" selection-start-column="16" selection-end-line="381" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/serviceImpl.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+        <state relative-caret-position="158">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/impl/PhrOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/tools/FreemarkerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/java/com/snailf/config/CodeGeneratorLinux.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="175" column="36" selection-start-line="175" selection-start-column="36" selection-end-line="175" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-code-generator/src/main/resources/service.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/test/java/com/phr/test/TestCodeMakerLinux.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phr-rest/src/main/java/com/phr/rest/biz/service/PhrOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>

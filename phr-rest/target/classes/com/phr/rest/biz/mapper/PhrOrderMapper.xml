@@ -19,30 +19,9 @@
  		 phrOrder.create_time as createTime ,
  		 phrOrder.update_time as updateTime
     </sql>
-    
-    <select id="selectByPrimaryKey" resultMap="BaseResultMap"
-		parameterType="java.lang.Long">
-		 select 
- 		  <include refid="Base_Column_List" />
- 		  from t_phr_order phrOrder
- 		  where phrOrder.id = #{ id }
-	</select>
-	<select id="selectByKeys" resultMap="BaseResultMap"
-		parameterType="java.util.Map">
-		 select 
- 		  <include refid="Base_Column_List" />
- 		  from t_phr_order phrOrder
- 		  where phrOrder.id = #{ id }
-	</select>
 
-	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-		 delete 
- 		  from t_phr_order
- 		  where id = #{ id }
-	</delete>
-	
-	<insert id="insertSelective" parameterType="com.phr.rest.biz.entity.PhrOrderEntity">
-		 insert into  t_phr_order
+    <insert id="insertSelective" parameterType="com.phr.rest.biz.entity.PhrOrderEntity">
+	 insert into  t_phr_order
  		  <trim prefix="(" suffix=")" suffixOverrides=","> 
  			 <if test="id != null">
  				 id,
@@ -83,10 +62,18 @@
  				 #{updateTime},
  			  </if>
  		  </trim>
-	</insert>
-	
-	<update id="updateByPrimaryKeySelective" parameterType="com.phr.rest.biz.entity.PhrOrderEntity">
-		 update   t_phr_order
+    </insert>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.Long">
+		 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_order phrOrder
+ 		  where phrOrder.id = #{ id }
+	</select>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.phr.rest.biz.entity.PhrOrderEntity">
+	 update   t_phr_order
  		 <set>
  			 <if test="orderId != null">
  				 order_id = #{orderId},
@@ -105,9 +92,119 @@
  			  </if>
  		 </set>
      where id = #{id}
-	</update>
+    </update>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		 delete 
+ 		  from t_phr_order
+ 		  where id = #{ id }
+	</delete>
 	
-	 <select id="getList" resultMap="BaseResultMap"
+	<select id="getEntityByParams" resultMap="BaseResultMap"
+        parameterType="java.util.Map">
+	 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_order phrOrder
+ 		  where 1=1 
+ 		 <if test="id != null">
+ 			 and phrOrder.id = #{id}
+ 		  </if>
+ 		 <if test="orderId != null">
+ 			 and phrOrder.order_id = #{orderId}
+ 		  </if>
+ 		 <if test="mobile != null">
+ 			 and phrOrder.mobile = #{mobile}
+ 		  </if>
+ 		 <if test="amt != null">
+ 			 and phrOrder.amt = #{amt}
+ 		  </if>
+ 		 <if test="createTime != null">
+ 			 and phrOrder.create_time = #{createTime}
+ 		  </if>
+ 		 <if test="updateTime != null">
+ 			 and phrOrder.update_time = #{updateTime}
+ 		  </if>
+    </select>
+
+    <select id="getListByParams" resultMap="BaseResultMap"
+        parameterType="java.util.Map">
+	 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_order phrOrder
+ 		  where 1=1 
+ 		 <if test="id != null">
+ 			 and phrOrder.id = #{id}
+ 		  </if>
+ 		 <if test="orderId != null">
+ 			 and phrOrder.order_id = #{orderId}
+ 		  </if>
+ 		 <if test="mobile != null">
+ 			 and phrOrder.mobile = #{mobile}
+ 		  </if>
+ 		 <if test="amt != null">
+ 			 and phrOrder.amt = #{amt}
+ 		  </if>
+ 		 <if test="createTime != null">
+ 			 and phrOrder.create_time = #{createTime}
+ 		  </if>
+ 		 <if test="updateTime != null">
+ 			 and phrOrder.update_time = #{updateTime}
+ 		  </if>
+    </select>
+
+    <select id="getEntityByKeys" resultMap="BaseResultMap"
+        parameterType="com.phr.rest.biz.entity.PhrOrderEntity">
+	 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_order phrOrder
+ 		  where 1=1 
+ 		 <if test="id != null">
+ 			 and phrOrder.id = #{id}
+ 		  </if>
+ 		 <if test="orderId != null">
+ 			 and phrOrder.order_id = #{orderId}
+ 		  </if>
+ 		 <if test="mobile != null">
+ 			 and phrOrder.mobile = #{mobile}
+ 		  </if>
+ 		 <if test="amt != null">
+ 			 and phrOrder.amt = #{amt}
+ 		  </if>
+ 		 <if test="createTime != null">
+ 			 and phrOrder.create_time = #{createTime}
+ 		  </if>
+ 		 <if test="updateTime != null">
+ 			 and phrOrder.update_time = #{updateTime}
+ 		  </if>
+    </select>
+
+    <select id="getListByKeys" resultMap="BaseResultMap"
+        parameterType="com.phr.rest.biz.entity.PhrOrderEntity">
+	 select 
+ 		  <include refid="Base_Column_List" />
+ 		  from t_phr_order phrOrder
+ 		  where 1=1 
+ 		 <if test="id != null">
+ 			 and phrOrder.id = #{id}
+ 		  </if>
+ 		 <if test="orderId != null">
+ 			 and phrOrder.order_id = #{orderId}
+ 		  </if>
+ 		 <if test="mobile != null">
+ 			 and phrOrder.mobile = #{mobile}
+ 		  </if>
+ 		 <if test="amt != null">
+ 			 and phrOrder.amt = #{amt}
+ 		  </if>
+ 		 <if test="createTime != null">
+ 			 and phrOrder.create_time = #{createTime}
+ 		  </if>
+ 		 <if test="updateTime != null">
+ 			 and phrOrder.update_time = #{updateTime}
+ 		  </if>
+    </select>
+
+	<select id="getListByPage" resultMap="BaseResultMap"
 		parameterType="java.util.Map">
 		 select 
  		  <include refid="Base_Column_List" />
@@ -132,32 +229,8 @@
  			 and phrOrder.update_time = #{updateTime}
  		  </if>
 	</select>
-	 <select id="getListByPage" resultMap="BaseResultMap"
-		parameterType="java.util.Map">
-		 select 
- 		  <include refid="Base_Column_List" />
- 		  from t_phr_order phrOrder
- 		  where 1=1 
- 		 <if test="id != null">
- 			 and phrOrder.id = #{id}
- 		  </if>
- 		 <if test="orderId != null">
- 			 and phrOrder.order_id = #{orderId}
- 		  </if>
- 		 <if test="mobile != null">
- 			 and phrOrder.mobile = #{mobile}
- 		  </if>
- 		 <if test="amt != null">
- 			 and phrOrder.amt = #{amt}
- 		  </if>
- 		 <if test="createTime != null">
- 			 and phrOrder.create_time = #{createTime}
- 		  </if>
- 		 <if test="updateTime != null">
- 			 and phrOrder.update_time = #{updateTime}
- 		  </if>
-	</select>
-	 <select id="getListCount" resultType="java.lang.Integer"
+
+	<select id="getListCount" resultType="java.lang.Integer"
 		parameterType="java.util.Map">
 		 select 
  		  count(phrOrder.id)
