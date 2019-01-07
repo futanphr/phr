@@ -40,26 +40,26 @@ public interface ${className}Service  {
 	 * @return
 	 */
 	int deleteByPrimaryKey(Long id);
-	/**
-	 * 通过map参数 获取实体对象
-	 * @return
-	 */
-	Optional<${className}Entity> getEntityByParams(Map<String,Object> params);
-	/**
-	 * 通过map参数获取列表
-	 * @return List<${className}Entity>
-    */
-   Optional<List<${className}Entity>> getListByParams(Map<String,Object> params);
-	/**
-	 * 通过对象中的某些字段 获取实体对象
-	 * @return
-	 */
-    Optional<${className}Entity> getEntityByKeys(${className}Entity entity);
     /**
     * 通过对象中的某些字段获取列表
     * @return List<${className}Entity>
 	*/
     Optional<List<${className}Entity>> getListByKeys(${className}Entity entity);
+	/**
+	 * 通过对象中的某些字段 获取实体对象
+	 * @return
+	 */
+    Optional<${className}Entity> getEntityByKeys(${className}Entity entity);
+	/**
+	* 通过map参数获取列表
+	* @return List<${className}Entity>
+	*/
+	Optional<List<${className}Entity>> getListByParams(Map<String,Object> params);
+	/**
+	* 通过map参数 获取实体对象
+	* @return
+	*/
+	Optional<${className}Entity> getEntityByParams(Map<String,Object> params);
 	/**
 	 * 通过map参数获取列表 分页
 	 */

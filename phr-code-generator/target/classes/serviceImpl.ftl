@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import java.util.*;
 
 /**
  *
@@ -62,35 +63,35 @@ public class ${className}ServiceImpl  implements ${className}Service{
 	public int deleteByPrimaryKey(Long id){
 		return	${firsetLowerClassName}Mapper.deleteByPrimaryKey(id);
 	}
+    /**
+    * 通过对象中的某些字段获取列表
+    * @return List<${className}Entity>
+	*/
+	public Optional<List<${className}Entity>> getListByKeys(${className}Entity entity){
+	    return  Optional.ofNullable(${firsetLowerClassName}Mapper.getListByKeys(entity));
+	}
+	/**
+	* 通过对象中的某些字段 获取实体对象
+	* @return
+	*/
+	public Optional<${className}Entity> getEntityByKeys(${className}Entity entity){
+		return ${firsetLowerClassName}Mapper.getListByKeys(entity).stream().max(Comparator.comparing(${className}Entity::getId));
+	}
+	/**
+	* 通过map参数获取列表
+	* @param params
+	* @return List<${className}Entity>
+	*/
+	public Optional<List<${className}Entity>> getListByParams(Map<String,Object> params){
+	   return  Optional.ofNullable(${firsetLowerClassName}Mapper.getListByParams(params));
+	}
 	/**
 	 * 通过map 获取实体对象
 	 * @return
 	 */
 	public Optional<${className}Entity> getEntityByParams(Map<String,Object> params){
-		return ${firsetLowerClassName}Mapper.getEntityByParams(params);
+		return ${firsetLowerClassName}Mapper.getListByParams(params).stream().max(Comparator.comparing(${className}Entity::getId));
 	}
-	/**
-	 * 通过map参数获取列表
-	 * @param params
-	 * @return List<${className}Entity>
-    */
-    public Optional<List<${className}Entity>> getListByParams(Map<String,Object> params){
-        return  ${firsetLowerClassName}Mapper.getListByParams(params);
-    }
-	/**
-	 * 通过对象中的某些字段 获取实体对象
-	 * @return
-	 */
-	public Optional<${className}Entity> getEntityByKeys(${className}Entity entity){
-		return ${firsetLowerClassName}Mapper.getEntityByKeys(entity);
-	}
-    /**
-    * 通过对象中的某些字段获取列表
-    * @return List<${className}Entity>
-	*/
-    public Optional<List<${className}Entity>> getListByKeys(${className}Entity entity){
-    return  ${firsetLowerClassName}Mapper.getListByKeys(entity);
-    }
 	/**
 	 * 通过map参数获取列表 分页
 	 * @param params
@@ -102,7 +103,7 @@ public class ${className}ServiceImpl  implements ${className}Service{
         pageSize = ( pageSize == null || pageSize == 0 ) ? 10 : pageSize;
         navigatePages=( navigatePages == null || navigatePages == 0 ) ? 10 : navigatePages;
 		PageHelper.startPage(pageNo,pageSize);
-		List<${className}Entity> list = ${firsetLowerClassName}Mapper.getListByParams(params).orElse(new ArrayList<>());
+		List<${className}Entity> list = ${firsetLowerClassName}Mapper.getListByParams(params);
 		PageInfo<${className}Entity> pageInfo = new PageInfo<${className}Entity>(list, navigatePages);
 		return pageInfo;
 	}

@@ -7,7 +7,7 @@ import com.github.pagehelper.PageInfo;
 import java.util.Optional;
 /**
  *
- * @time 2019年01月06日 23:11:47
+ * @time 2019年01月07日 10:27:58
  * @version 1.0
  * @description 与数据库中表t_phr_order相应操作的接口
  **/
@@ -38,26 +38,26 @@ public interface PhrOrderService  {
 	 * @return
 	 */
 	int deleteByPrimaryKey(Long id);
-	/**
-	 * 通过map参数 获取实体对象
-	 * @return
-	 */
-	Optional<PhrOrderEntity> getEntityByParams(Map<String,Object> params);
-	/**
-	 * 通过map参数获取列表
-	 * @return List<PhrOrderEntity>
-    */
-   Optional<List<PhrOrderEntity>> getListByParams(Map<String,Object> params);
-	/**
-	 * 通过对象中的某些字段 获取实体对象
-	 * @return
-	 */
-    Optional<PhrOrderEntity> getEntityByKeys(PhrOrderEntity entity);
     /**
     * 通过对象中的某些字段获取列表
     * @return List<PhrOrderEntity>
 	*/
     Optional<List<PhrOrderEntity>> getListByKeys(PhrOrderEntity entity);
+	/**
+	 * 通过对象中的某些字段 获取实体对象
+	 * @return
+	 */
+    Optional<PhrOrderEntity> getEntityByKeys(PhrOrderEntity entity);
+	/**
+	* 通过map参数获取列表
+	* @return List<PhrOrderEntity>
+	*/
+	Optional<List<PhrOrderEntity>> getListByParams(Map<String,Object> params);
+	/**
+	* 通过map参数 获取实体对象
+	* @return
+	*/
+	Optional<PhrOrderEntity> getEntityByParams(Map<String,Object> params);
 	/**
 	 * 通过map参数获取列表 分页
 	 */

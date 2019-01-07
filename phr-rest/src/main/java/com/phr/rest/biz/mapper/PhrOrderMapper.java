@@ -7,7 +7,7 @@ import java.util.Optional;
 //import org.apache.ibatis.session.RowBounds;
 /**
  *
- * @time 2019年01月06日 23:11:47
+ * @time 2019年01月07日 10:27:57
  * @version 1.0
  *
  **/
@@ -37,28 +37,17 @@ public interface PhrOrderMapper  {
 	 * @return
 	 */
 	int deleteByPrimaryKey(Long id);
-
-	/**
-	 * 通过map 获取实体对象
-	 * @return
-	 */
-	Optional<PhrOrderEntity> getEntityByParams(Map<String,Object> params);
-	/**
-	 * 通过map参数获取列表
-	 * @param params
-	 * @return List<PhrOrderEntity>
-    */
-    Optional<List<PhrOrderEntity>> getListByParams(Map<String,Object> params);
-	/**
-	 * 通过对象中的某些字段 获取实体对象
-	 * @return
-	 */
-    Optional<PhrOrderEntity> getEntityByKeys(PhrOrderEntity entity);
     /**
     * 通过对象中的某些字段获取列表
     * @return List<PhrOrderEntity>
     */
-	Optional<List<PhrOrderEntity>> getListByKeys(PhrOrderEntity entity);
+	List<PhrOrderEntity> getListByKeys(PhrOrderEntity entity);
+    /**
+    * 通过map参数获取列表
+    * @param params
+    * @return List<PhrOrderEntity>
+    */
+    List<PhrOrderEntity> getListByParams(Map<String,Object> params);
 	/**
 	 * 通过map参数获取列表 分页
 	 * @param params

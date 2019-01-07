@@ -26,24 +26,14 @@
 		${deleteSql}
 	</delete>
 	
-	<select id="getEntityByParams" resultMap="BaseResultMap"
-        parameterType="java.util.Map">
+    <select id="getListByKeys" resultMap="BaseResultMap"
+        parameterType="${resultType}">
 	${listSql}
     </select>
 
     <select id="getListByParams" resultMap="BaseResultMap"
-        parameterType="java.util.Map">
-	${listSql}
-    </select>
-
-    <select id="getEntityByKeys" resultMap="BaseResultMap"
-        parameterType="${resultType}">
-	${listSql}
-    </select>
-
-    <select id="getListByKeys" resultMap="BaseResultMap"
-        parameterType="${resultType}">
-	${listSql}
+            parameterType="java.util.Map">
+    ${listSql}
     </select>
 
 	<select id="getListByPage" resultMap="BaseResultMap"

@@ -69,7 +69,7 @@ public class ${className}Entity implements Serializable  {
      */
     public static class Builder{
     <#list table.columns as column>
-    private ${column.simpleJavaType} ${column.columnNameLower};
+    private ${column.simpleJavaType} ${column.columnNameLower}=null;
     </#list>
 
     <#list table.columns as column>
@@ -89,5 +89,10 @@ public class ${className}Entity implements Serializable  {
       this.${column.columnNameLower} = builder.${column.columnNameLower};
     </#list>
     }
+    /**
+     * 默认构造函数，不要省掉这行代码
+     */
+    public ${className}Entity(){}
+
 </#macro>
 }

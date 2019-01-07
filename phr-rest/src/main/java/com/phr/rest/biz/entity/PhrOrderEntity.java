@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 /**
  *
  * @类介绍 
- * @time 2019年01月06日 23:11:47
+ * @time 2019年01月07日 10:27:57
  * @version 1.0
  * @description 数据库表对应的实体类，类中属性与数据库字段对应
  **/
@@ -21,6 +21,10 @@ public class PhrOrderEntity implements Serializable  {
      * 
      */
     private Long orderId;
+    /**
+     * 
+     */
+    private Integer workOrderId;
     /**
      * 
      */
@@ -60,6 +64,18 @@ public class PhrOrderEntity implements Serializable  {
      */
     public Long getOrderId() {
         return this.orderId;
+    }
+	/**
+	 * 设置
+	 */
+    public void setWorkOrderId(Integer workOrderId) {
+        this.workOrderId = workOrderId;
+    }
+    /**
+     * 获取
+     */
+    public Integer getWorkOrderId() {
+        return this.workOrderId;
     }
 	/**
 	 * 设置
@@ -116,12 +132,13 @@ public class PhrOrderEntity implements Serializable  {
      * 我们可以这么写：PhrOrderEntity entity=new PhrOrderEntity.Builder.setId(100).build();
      */
     public static class Builder{
-    private Long id;
-    private Long orderId;
-    private String mobile;
-    private BigDecimal amt;
-    private Date createTime;
-    private Date updateTime;
+    private Long id=null;
+    private Long orderId=null;
+    private Integer workOrderId=null;
+    private String mobile=null;
+    private BigDecimal amt=null;
+    private Date createTime=null;
+    private Date updateTime=null;
 
     public Builder setId(Long id) {
         this.id = id;
@@ -129,6 +146,10 @@ public class PhrOrderEntity implements Serializable  {
     }
     public Builder setOrderId(Long orderId) {
         this.orderId = orderId;
+        return this;
+    }
+    public Builder setWorkOrderId(Integer workOrderId) {
+        this.workOrderId = workOrderId;
         return this;
     }
     public Builder setMobile(String mobile) {
@@ -156,10 +177,16 @@ public class PhrOrderEntity implements Serializable  {
     public PhrOrderEntity(Builder builder){
       this.id = builder.id;
       this.orderId = builder.orderId;
+      this.workOrderId = builder.workOrderId;
       this.mobile = builder.mobile;
       this.amt = builder.amt;
       this.createTime = builder.createTime;
       this.updateTime = builder.updateTime;
     }
+    /**
+     * 默认构造函数，不要省掉这行代码
+     */
+    public PhrOrderEntity(){}
+
 
 }

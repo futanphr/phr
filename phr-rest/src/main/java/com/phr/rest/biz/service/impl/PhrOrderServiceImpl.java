@@ -13,10 +13,11 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import java.util.*;
 
 /**
  *
- * @time 2019年01月06日 23:11:47
+ * @time 2019年01月07日 10:27:58
  * @version 1.0
  * @description 与数据库中表t_phr_order相应操作的实现
  **/
@@ -60,35 +61,35 @@ public class PhrOrderServiceImpl  implements PhrOrderService{
 	public int deleteByPrimaryKey(Long id){
 		return	phrOrderMapper.deleteByPrimaryKey(id);
 	}
+    /**
+    * 通过对象中的某些字段获取列表
+    * @return List<PhrOrderEntity>
+	*/
+	public Optional<List<PhrOrderEntity>> getListByKeys(PhrOrderEntity entity){
+	    return  Optional.ofNullable(phrOrderMapper.getListByKeys(entity));
+	}
+	/**
+	* 通过对象中的某些字段 获取实体对象
+	* @return
+	*/
+	public Optional<PhrOrderEntity> getEntityByKeys(PhrOrderEntity entity){
+		return phrOrderMapper.getListByKeys(entity).stream().max(Comparator.comparing(PhrOrderEntity::getId));
+	}
+	/**
+	* 通过map参数获取列表
+	* @param params
+	* @return List<PhrOrderEntity>
+	*/
+	public Optional<List<PhrOrderEntity>> getListByParams(Map<String,Object> params){
+	   return  Optional.ofNullable(phrOrderMapper.getListByParams(params));
+	}
 	/**
 	 * 通过map 获取实体对象
 	 * @return
 	 */
 	public Optional<PhrOrderEntity> getEntityByParams(Map<String,Object> params){
-		return phrOrderMapper.getEntityByParams(params);
+		return phrOrderMapper.getListByParams(params).stream().max(Comparator.comparing(PhrOrderEntity::getId));
 	}
-	/**
-	 * 通过map参数获取列表
-	 * @param params
-	 * @return List<PhrOrderEntity>
-    */
-    public Optional<List<PhrOrderEntity>> getListByParams(Map<String,Object> params){
-        return  phrOrderMapper.getListByParams(params);
-    }
-	/**
-	 * 通过对象中的某些字段 获取实体对象
-	 * @return
-	 */
-	public Optional<PhrOrderEntity> getEntityByKeys(PhrOrderEntity entity){
-		return phrOrderMapper.getEntityByKeys(entity);
-	}
-    /**
-    * 通过对象中的某些字段获取列表
-    * @return List<PhrOrderEntity>
-	*/
-    public Optional<List<PhrOrderEntity>> getListByKeys(PhrOrderEntity entity){
-    return  phrOrderMapper.getListByKeys(entity);
-    }
 	/**
 	 * 通过map参数获取列表 分页
 	 * @param params
@@ -100,7 +101,7 @@ public class PhrOrderServiceImpl  implements PhrOrderService{
         pageSize = ( pageSize == null || pageSize == 0 ) ? 10 : pageSize;
         navigatePages=( navigatePages == null || navigatePages == 0 ) ? 10 : navigatePages;
 		PageHelper.startPage(pageNo,pageSize);
-		List<PhrOrderEntity> list = phrOrderMapper.getListByParams(params).orElse(new ArrayList<>());
+		List<PhrOrderEntity> list = phrOrderMapper.getListByParams(params);
 		PageInfo<PhrOrderEntity> pageInfo = new PageInfo<PhrOrderEntity>(list, navigatePages);
 		return pageInfo;
 	}
